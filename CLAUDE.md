@@ -55,12 +55,16 @@ orgánico. Los slugs están traducidos, no solo prefijados:
 
 | ES (sin prefijo) | EN (prefijo `/en`) |
 |---|---|
-| `/` | `/en` |
+| `/` | `/en/` |
 | `/publicaciones` | `/en/publications` |
 | `/investigacion` | `/en/research` |
 | `/docencia` | `/en/teaching` |
 | `/biografia` | `/en/biography` |
 | `/contacto` | `/en/contact` |
+
+Producción usa **trailing slash** (`/publicaciones` → 301 → `/publicaciones/`), por
+lo que `trailingSlash: true`. La home EN indexada hoy es `/en/inicio-english/`:
+se sirve `/en/` y se redirige 301 desde la antigua.
 
 Se implementa con `pathnames` de next-intl y `localePrefix: 'as-needed'`.
 Usar siempre el `Link` y el `useRouter` que exporta `@/lib/i18n/navigation`,
@@ -90,13 +94,32 @@ tal cual del sistema anterior: `articulo-wos`, `actas-capitulos`,
 camelCase, no traducir, no "ordenar". La etiqueta visible se resuelve en
 `messages/{locale}.json`.
 
-**6 · Las imágenes van por Cloudinary**, configurado como `loader` de
-`next/image`. No usar la optimización de imágenes de Vercel: es un recurso
-medido y una de las causas típicas de sobrecosto.
+**6 · Imágenes con `next/image` por defecto** (optimización de Vercel). Hay muy
+pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
 
 **7 · Studio standalone.** No montar el Studio dentro de la app Next
 (`/app/studio/[[...tool]]`). Vive en `studio/` y se despliega con
 `sanity deploy`.
+
+---
+
+## Estado y decisiones (2026-10-05)
+
+- Repo: `github.com/hyperagencia/carlosconcaweb` (Hyper). Se trabaja en
+  `~/dev/carlosconca`, **fuera de iCloud**. Commit inicial hecho, sin push.
+- Sanity: se desarrolla directo en la cuenta de Carlos (pendiente `projectId` y
+  token de escritura, en `.env.local`, nunca al repo).
+- Vercel: plan gratuito, **sin conectar** hasta tener acceso. Solo local.
+- **Sin formulario de contacto ni Resend por ahora**: `/contacto` es informativa.
+- Figma: el usuario explica los componentes uno a uno; mobile es más simple.
+- Datos: `data/publicaciones.json` = 197 (120 wos, 43 actas, 16 indexado,
+  10 nacional, 6 otras, 2 libro; 73 con DOI; `pdf` siempre null).
+- Redirects por cubrir: `/sample-page/`, `/work/`, posts, portfolio, taxonomías
+  y `/en/inicio-english/`.
+- `docs/sanity-schema-conca.draft.ts` es el schema borrador; irá a `studio/`.
+- Siguiente paso: andamiaje T1 (monorepo pnpm, Next 16, Tailwind v4, next-intl,
+  studio), luego test de las 12 URLs (T2). Pendiente del usuario: credenciales
+  Sanity y export de GSC/GA4 (línea base).
 
 ---
 

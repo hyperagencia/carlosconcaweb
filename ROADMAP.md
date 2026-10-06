@@ -150,8 +150,7 @@ carlosconca/
 ```ts
 {
   cacheComponents: true,
-  trailingSlash: <según Fase 0>,
-  images: { loader: 'custom', loaderFile: './lib/cloudinary-loader.ts' },
+  trailingSlash: true,
 }
 ```
 
@@ -221,7 +220,7 @@ El componente crítico. Orden importa:
 ## T7 · Páginas
 
 Inicio → Publicaciones → Investigación → Docencia → Biografía → Contacto.
-Contacto con Server Action + Resend, sin base de datos.
+Contacto informativo por ahora; el formulario (Server Action + Resend) queda para el final.
 
 ## T8 · Mobile
 
