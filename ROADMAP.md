@@ -37,9 +37,9 @@ captura ahora, el caso de estudio pierde su mitad más valiosa.
 - [ ] Exportar Search Console: consultas, CTR e impresiones de los últimos 6 meses
 - [ ] Confirmar propiedad de GSC y ID de medición de GA4
 - [ ] Confirmar si Carlos tiene ORCID; si no, registrarlo
-- [ ] Crear proyecto Sanity `carlosconca-dev` en la cuenta de Hyper
-- [ ] Crear repo privado en el org de Hyper e inicializar el monorepo
-- [ ] Escribir `INFRA.md`: quién es dueño de qué, env vars, procedimiento de
+- [x] Proyecto Sanity creado, directamente en la cuenta de Carlos (`ntv5ihqf`, dataset `production`)
+- [ ] Crear repo privado en el org de Hyper y hacer el primer push (el monorepo local ya está inicializado, sin remoto)
+- [x] Escribir `INFRA.md` (esqueleto; se completa con las cuentas del cliente): quién es dueño de qué, env vars, procedimiento de
       migración de hosting
 
 **Cierra cuando:** existe un documento con los números de partida y el repo
@@ -61,11 +61,11 @@ impacto en tiempo y costo, según la cotización.
 
 ## Fase 2 · Fundaciones
 
-- [ ] Monorepo, Next 16, Tailwind v4, Studio standalone
-- [ ] Schema de Sanity desplegado
+- [x] Monorepo, Next 16, Tailwind v4, Studio standalone
+- [ ] Schema de Sanity desplegado (el Studio corre local con el schema de `studio/`; falta `sanity deploy` cuando se decida publicarlo)
 - [x] Migración de las 197 publicaciones con verificación de integridad
-- [ ] Enrutamiento localizado con las 12 URLs exactas
-- [ ] Capa de datos con `'use cache'` + `cacheTag` y webhook de revalidación
+- [x] Enrutamiento localizado con las 12 URLs exactas (test en CI)
+- [x] Capa de datos con `'use cache'` + `cacheTag` y webhook de revalidación (endpoint listo; falta crear el webhook en Sanity: necesita URL pública)
 
 **Cierra cuando:** las 12 rutas responden, `pnpm migrate` reporta 197/197 y una
 edición en el Studio se refleja en el sitio local.
@@ -133,7 +133,7 @@ Dos semanas después. Es el entregable del caso de estudio.
 
 Orden de construcción. Cada bloque asume el anterior terminado.
 
-## T1 · Andamiaje
+## T1 · Andamiaje · ✅ hecho
 
 ```
 carlosconca/
@@ -157,7 +157,7 @@ carlosconca/
 CI en GitHub Actions desde el primer commit: `typecheck`, `lint`, `build`.
 Barato ahora, caro de agregar después.
 
-## T2 · Enrutamiento localizado
+## T2 · Enrutamiento localizado · ✅ hecho
 
 El bloque de mayor riesgo del proyecto: un error acá cuesta posicionamiento.
 
@@ -182,7 +182,7 @@ export const routing = defineRouting({
 recorra las 12 URLs y exija 200 sin redirect intermedio. Ese test es el
 contrato con el SEO existente y debe correr en CI de aquí en adelante.
 
-## T3 · Capa de datos
+## T3 · Capa de datos · ✅ hecho
 
 - Cliente Sanity (`useCdn: false` en build y en webhooks)
 - Queries GROQ con `defineQuery` + `pnpm typegen`
@@ -191,12 +191,16 @@ contrato con el SEO existente y debe correr en CI de aquí en adelante.
   `next-sanity/webhook` y llamando `revalidateTag(tag, 'max')`
 - Webhook configurado en Sanity con filtro por `_type`
 
-## T4 · Schema y migración
+## T4 · Schema y migración · ✅ hecho
 
 - Desplegar el schema al Studio
 - `pnpm migrate -- --dry-run`, luego `pnpm migrate`
 - Verificar 197/197 por categoría, década y cobertura de enlaces
 - Cargar el contenido de las 6 páginas × 2 idiomas
+
+Resultado: 197/197 publicaciones y 14 documentos de página en Sanity (`pnpm migrate`,
+`pnpm extract:wp` → `pnpm build:content` → `pnpm load:pages`). El schema aún no se
+despliega con `sanity deploy`; no hace falta para escribir ni leer documentos.
 
 ## T5 · Sistema de diseño
 

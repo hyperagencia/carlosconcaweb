@@ -19,9 +19,14 @@ pnpm typecheck              # tsc --noEmit en ambos workspaces
 pnpm lint
 pnpm test                   # vitest
 pnpm typegen                # extrae schema de studio/ + genera tipos de las queries de web/
+pnpm test:routes            # las 12 URLs contra next start (requiere pnpm build antes)
 
 pnpm migrate -- --dry-run   # valida el JSON de publicaciones sin escribir
 pnpm migrate                # importa a Sanity (idempotente)
+
+pnpm extract:wp             # baja el texto del WordPress actual a scripts/.cache/ (solo GET)
+pnpm build:content          # lo convierte en data/contenido/*.json (revisable)
+pnpm load:pages -- --dry-run  # valida y carga las páginas; sin --force no pisa lo editado
 ```
 
 Antes de dar por terminada cualquier tarea: `pnpm typecheck && pnpm lint && pnpm build`.
@@ -40,7 +45,9 @@ web/                     Next.js 16 · App Router · Tailwind v4
   messages/              es.json · en.json (next-intl)
 studio/                  Sanity Studio standalone (se despliega en sanity.studio)
 data/publicaciones.json  origen de la migración · solo lectura, no editar
-scripts/
+data/contenido/          14 JSON de páginas (6 + siteSettings × es/en), revisables
+assets/                  bandeja de assets de diseño del usuario (ver assets/README.md)
+scripts/                 migración, extracción del WP, carga de páginas
 ```
 
 ---
@@ -105,48 +112,91 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
 
 ## Estado y decisiones (2026-10-05)
 
-- Repo: `github.com/hyperagencia/carlosconcaweb` (Hyper). Se trabaja en
-  `~/dev/carlosconca`, **fuera de iCloud**. Commit inicial hecho, sin push.
-- Sanity: se desarrolla directo en la cuenta de Carlos. Proyecto `ntv5ihqf`,
-  dataset `production`. Token de escritura en `.env.local`, nunca al repo.
+### Cómo retomar en otra sesión
+
+1. `pnpm install`; el `.env.local` de la raíz ya tiene `SANITY_PROJECT_ID`,
+   `SANITY_DATASET`, `SANITY_WRITE_TOKEN` y `SANITY_REVALIDATE_SECRET` (si falta,
+   ver `.env.example`; el token se crea en sanity.io/manage → API → Tokens).
+2. `pnpm typecheck && pnpm lint && pnpm test && pnpm build && pnpm test:routes`
+   debe pasar antes de tocar nada.
+3. **Fase 3 (desktop) es lo siguiente y está bloqueada por una conversación**: el
+   usuario va a explicar la línea visual del tema de Carlos y los componentes de
+   Figma uno a uno. No inventar tokens, colores ni tipografías. Preguntar y llenar
+   el `@theme` de `web/app/globals.css` (hoy vacío) con lo que él indique. Orden
+   del ROADMAP: T5 sistema de diseño → T6 componente de Publicaciones → T7 páginas.
+4. Las páginas (`web/app/[locale]/**/page.tsx`) son stubs que solo muestran un `<h1>`;
+   los datos ya se leen con las funciones de `web/lib/sanity/fetch.ts`.
+
+### Hecho (T1–T4 del ROADMAP técnico)
+
+- **T1 andamiaje:** monorepo pnpm; `web/` (Next 16, next-intl, Tailwind v4, vitest);
+  `studio/` (Sanity standalone, schema en `studio/schemaTypes/`, estructura con
+  publicaciones primero); CI en `.github/workflows/ci.yml`; `INFRA.md`.
+- **T2 rutas:** `pnpm test:routes` prueba contra `next start` las 12 URLs (200 sin
+  redirect, `lang` correcto), el salto sin slash → con slash, y `/en/inicio-english/`
+  → 301 `/en/`. Corre en CI. Next emite 308 (no 301) en el redirect de trailing
+  slash: es equivalente para SEO y no es configurable.
+- **T3 datos:** `web/lib/sanity/` (cliente sin token, queries con `defineQuery`,
+  tipos generados, lecturas `'use cache'` con `cacheTag(<_type>)`) y
+  `POST /api/revalidate` (firma con `next-sanity/webhook`; 401 / 400 / 200;
+  `revalidateTag(tipo, 'max')`, el perfil es el 2.º argumento posicional según la
+  doc de Next 16.3). `next.config.ts` carga el `.env.local` de la raíz con
+  `loadEnvConfig(..., forceReload)`. Falta crear el webhook en Sanity: necesita URL
+  pública (pasos en `INFRA.md`).
+- **T4 migración:** 197 publicaciones en Sanity, verificadas por categoría, década,
+  enlaces y registro a registro (script idempotente, commit `sync`). 14 documentos de
+  página cargados desde el WordPress. Flujo: `extract:wp` → `build:content` →
+  revisar `data/contenido/*.json` → `load:pages`. `docenciaPage` se amplió con
+  `doctoratesChile`, `engineers` y `genealogy`. **Todo lo que dice el WordPress es la
+  fuente válida de contenido.**
+
+### Decisiones
+
+- Repo: `github.com/hyperagencia/carlosconcaweb` (Hyper). Trabajo en
+  `~/dev/carlosconca`, **fuera de iCloud**. Varios commits locales, **sin push**
+  (no pushear sin que el usuario lo pida).
+- Sanity: cuenta de Carlos, proyecto `ntv5ihqf`, dataset `production` (lectura
+  pública; las lecturas del sitio no usan token). El token de escritura vence el
+  2027-01-03 y quedó expuesto en una conversación: rotarlo al terminar de desarrollar.
 - Vercel: plan gratuito, **sin conectar** hasta tener acceso. Solo local.
 - **Sin formulario de contacto ni Resend por ahora**: `/contacto` es informativa.
-- Figma: el usuario explica los componentes uno a uno; mobile es más simple.
-- Datos: `data/publicaciones.json` = 197 (120 wos, 43 actas, 16 indexado,
-  10 nacional, 6 otras, 2 libro; 73 con DOI; `pdf` siempre null).
-- Redirects por cubrir: `/sample-page/`, `/work/`, posts, portfolio, taxonomías
-  y `/en/inicio-english/`.
-- `docs/sanity-schema-conca.draft.ts` es el schema borrador; irá a `studio/`.
-- T1 (andamiaje) hecho: monorepo pnpm, `web/` (Next 16, next-intl, Tailwind v4,
-  páginas stub en las 6 rutas), `studio/` (schema dividido en `schemaTypes/`,
-  structure con publicaciones primero), CI, `INFRA.md`. `pnpm typecheck && pnpm
-  lint && pnpm test && pnpm build` pasan; `pnpm migrate -- --dry-run` valida 197/197.
-- T2 hecho: `pnpm build && pnpm test:routes` prueba contra `next start` las 12
-  URLs (200 sin redirect, `lang` correcto), el salto sin slash → con slash y
-  `/en/inicio-english/` → 301 `/en/`. Corre en CI tras el build. Next emite 308
-  (no 301) en el redirect de trailing slash; es equivalente para SEO y no es
-  configurable. El resto de redirects legacy va en la Fase 5.
-- T3 hecho: `web/lib/sanity/` (cliente sin token, queries con `defineQuery`,
-  tipos generados con `pnpm typegen`, lecturas `'use cache'` con tag = `_type`)
-  y `POST /api/revalidate` (firma con `next-sanity/webhook`, 401/400/200,
-  `revalidateTag(tipo, 'max')`). `next.config.ts` carga el `.env.local` de la
-  raíz. Falta crear el webhook en Sanity: necesita URL pública (ver `INFRA.md`).
-- T4 hecho: 197 publicaciones migradas a Sanity (verificadas por categoría,
-  década, enlaces y registro a registro; idempotente) y 14 documentos de página
-  (6 páginas + `siteSettings`, ES/EN) cargados desde el WordPress con
-  `pnpm extract:wp` → `pnpm build:content` → `pnpm load:pages` (JSON revisable en
-  `data/contenido/`; no pisa lo editado en el Studio, `--force` sobrescribe).
-  `docenciaPage` se amplió con `doctoratesChile`, `engineers` y `genealogy`.
-  Todo lo del WordPress es la fuente válida de contenido.
-- Pendientes de contenido: la publicación 198 (el WP muestra 198, el JSON tiene
-  197) se agregará desde el Studio como prueba; revisar el contenido de cada área
-  de investigación (acordeón); traducir las bajadas del timeline EN; correo y
-  dirección de contacto, ORCID y retrato no existen en el WP. Las 2 tarjetas de
-  publicaciones de la home tienen contador dinámico no leído (solo se cargaron
-  1973 y +40). Los assets que vaya dejando el usuario entran por `assets/`.
-- Siguiente paso: Fase 3 (desktop): sistema de diseño, layout y las 6 páginas
-  leyendo de `web/lib/sanity/`; el usuario explica Figma componente a componente.
-- Pendiente del usuario: export de GSC/GA4 (línea base).
+- Figma (`loI5LpwjO7N6uRGsD73gbl`, "Carlos Conca Wireframes"): es un wireframe con
+  datos de muestra (47+ años, 218 publicaciones, 119 ISI, 16 doctores) que
+  **contradicen al WordPress**; no usar esas cifras. Sirve para estructura y capturas
+  de "Home/Publicaciones/Investigación/Docencia/Biografía Wordpress". El usuario
+  explica los componentes uno a uno; mobile es más simple y se piensa aparte.
+- Datos: `data/publicaciones.json` = 197 (120 wos, 43 actas, 16 indexado, 10 nacional,
+  6 otras, 2 libro; 73 con DOI; `pdf` siempre null).
+- Redirects por cubrir (Fase 5): `/sample-page/`, `/work/`, posts, portfolio,
+  taxonomías. `/en/inicio-english/` ya está resuelto.
+- `docs/sanity-schema-conca.draft.ts` es el borrador histórico; la fuente de verdad
+  del schema es `studio/schemaTypes/`.
+
+### Pendientes de contenido
+
+- **Publicación 198:** el WordPress muestra "Publicaciones (198)"; el JSON tiene 197.
+  El usuario la verificará y la agregará desde el Studio como prueba de que el flujo
+  de edición funciona (y de que el webhook revalida, cuando exista).
+- Revisar el contenido de cada área de investigación (acordeón; el primer párrafo
+  del WP quedó como `summary`) y traducir las bajadas del timeline EN (el WP las
+  tiene en español).
+- Home: solo se cargaron las cifras `1973` y `+40`. Las otras 2 tarjetas
+  ("Publicaciones Científicas", "Publicaciones Matemáticas y Física-Matemática") tienen
+  contador dinámico no legible en el WP: definir qué número muestran (¿calculado
+  desde Sanity?).
+- No existen en el WP: correo y dirección de contacto, ORCID, retrato (el del hero es
+  un fondo del tema), texto introductorio de Publicaciones. Se completan en el Studio.
+- Afiliación: WP dice "UMR CNRS-UChile"; el wireframe dice "UMI 2807". Se cargó la del WP.
+- Imágenes de las 6 áreas (`assets/fotos/areas-investigacion/`): el schema no tiene
+  campo de imagen por área; decidir si se agrega `researchArea.image` o se sirven desde
+  `public/`.
+
+### Pendiente del usuario
+
+Export de GSC/GA4 (línea base), Fase 0 sin hacer (`curl` de trailing slash en
+producción, PageSpeed/CrUX de las 12 URLs), acceso a Vercel/DNS de Carlos, primer
+push del repo, diseño mobile en Figma (Fase 1, solo bloquea la Fase 4), y los assets
+que falten (`assets/README.md` lista lo que no está).
 
 ---
 
