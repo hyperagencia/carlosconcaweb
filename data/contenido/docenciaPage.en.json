@@ -48,15 +48,248 @@
       ]
     }
   ],
+  "doctoratesChile": [
+    {
+      "_key": "7709c60d4a",
+      "name": "Luis Friz Roa",
+      "year": "2003",
+      "position": "Associate Professor, University of Bío-Bío"
+    },
+    {
+      "_key": "5415cac866",
+      "name": "Patricio Cumsille Atala",
+      "year": "2006",
+      "position": "Associate Professor, University of Bío-Bío"
+    },
+    {
+      "_key": "a1b05528c1",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2012",
+      "position": "Associate Professor, Federico Santa María Technical University"
+    },
+    {
+      "_key": "4b75c55052",
+      "name": "Karina Vilches Ponce",
+      "year": "2014",
+      "position": "Full Professor; Vice-Rector, Catholic University of Maule"
+    },
+    {
+      "_key": "312423e711",
+      "name": "Matías Godoy Campbell",
+      "year": "2016",
+      "position": "Associate Professor, San Sebastián University"
+    },
+    {
+      "_key": "b1f2ea47c0",
+      "name": "Viviana Solano Palma",
+      "year": "2017",
+      "position": "Associate Professor, University of Development"
+    },
+    {
+      "_key": "97c3b91b77",
+      "name": "Donato Vásquez-Varas",
+      "year": "2022",
+      "position": "Assistant Professor, University of Chile"
+    },
+    {
+      "_key": "e60dbdac82",
+      "name": "Rodrigo Zelada Mancini",
+      "year": "2025"
+    }
+  ],
   "doctorates": [
     {
-      "_key": "d1395acab7",
+      "_key": "49802ed3d5",
       "name": "Jaime Reséndiz Barrón",
       "year": "2001",
-      "position": "Full Professor, Technological Institute of Querétaro, Mexico – Leonardo Baffico Haramoto (2001); Lecturer, University of Caen, Lower Normandy, France – Rafael Orive Illera (2003); Full Professor, Director of ICMAT, Madrid, Spain – Loredana Balilescu (2006); Full Professor, University of Pitesti, Romania – Erica Schwindt Malacarne (2011); Henri Poincaré University, Nancy I, France – Paul Acevedo Tapia (2015); Assistant Professor, National Polytechnic School, Quito, Ecuador – Duver Quintero Castañeda (2016); Assistant Professor, University of Antioquia",
+      "position": "Full Professor, Technological Institute of Querétaro",
+      "country": "Mexico"
+    },
+    {
+      "_key": "cc90043a77",
+      "name": "Leonardo Baffico Haramoto",
+      "year": "2001",
+      "position": "Lecturer, University of Caen, Lower Normandy",
+      "country": "France"
+    },
+    {
+      "_key": "40c9612b60",
+      "name": "Rafael Orive Illera",
+      "year": "2003",
+      "position": "Full Professor, Director of ICMAT, Madrid",
+      "country": "Spain"
+    },
+    {
+      "_key": "06ecd30429",
+      "name": "Loredana Balilescu",
+      "year": "2006",
+      "position": "Full Professor, University of Pitesti",
+      "country": "Romania"
+    },
+    {
+      "_key": "5e65789128",
+      "name": "Erica Schwindt Malacarne",
+      "year": "2011",
+      "position": "Henri Poincaré University, Nancy I",
+      "country": "France"
+    },
+    {
+      "_key": "c5c5e4e5ef",
+      "name": "Paul Acevedo Tapia",
+      "year": "2015",
+      "position": "Assistant Professor, National Polytechnic School, Quito",
+      "country": "Ecuador"
+    },
+    {
+      "_key": "cc3b7651b7",
+      "name": "Duver Quintero Castañeda",
+      "year": "2016",
+      "position": "Assistant Professor, University of Antioquia",
       "country": "Colombia"
     }
   ],
+  "engineers": [
+    {
+      "_key": "710799dc83",
+      "name": "Freddy Aguirre Astorga",
+      "year": "1984"
+    },
+    {
+      "_key": "4894358d49",
+      "name": "Mauricio Sepúlveda Contreras",
+      "year": "1988"
+    },
+    {
+      "_key": "19dc780e52",
+      "name": "Rodrigo Schiefelbein Grossen",
+      "year": "1988"
+    },
+    {
+      "_key": "b2e46a062d",
+      "name": "Mario Durán Toro",
+      "year": "1991"
+    },
+    {
+      "_key": "dfe4be21fd",
+      "name": "Axel Osses Alvarado",
+      "year": "1998"
+    },
+    {
+      "_key": "ceae83ae65",
+      "name": "Leonardo Baffico Haramoto",
+      "year": "1996"
+    },
+    {
+      "_key": "5cd19d3fb1",
+      "name": "Juan-Diego Dávila Bonczos",
+      "year": "1996"
+    },
+    {
+      "_key": "2ed4a82609",
+      "name": "Lilian Salinas Ayala",
+      "year": "1998"
+    },
+    {
+      "_key": "ac5b7701e0",
+      "name": "Alejandro Omón Arancibia",
+      "year": "2000"
+    },
+    {
+      "_key": "2c3fce8747",
+      "name": "Eduardo Cerpa Jeria",
+      "year": "2004"
+    },
+    {
+      "_key": "b33a361a3d",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2005"
+    },
+    {
+      "_key": "4af5fdd99f",
+      "name": "Patricio Cumsille Atala",
+      "year": "2006"
+    },
+    {
+      "_key": "a8597599e5",
+      "name": "Felipe Macías Araya",
+      "year": "2007"
+    },
+    {
+      "_key": "7ab8d0f4f4",
+      "name": "León Sanz Bunster",
+      "year": "2008"
+    },
+    {
+      "_key": "bbcdea8e37",
+      "name": "Manuel Larenas Aravena",
+      "year": "2010"
+    },
+    {
+      "_key": "7d30a75d1a",
+      "name": "Patricio Cerda Reyes",
+      "year": "2010"
+    },
+    {
+      "_key": "7bb7b6a061",
+      "name": "Cristóbal Quiñiñao Montero",
+      "year": "2010"
+    },
+    {
+      "_key": "536b88c5b0",
+      "name": "Francisco Unda Surawski",
+      "year": "2012"
+    },
+    {
+      "_key": "db1c5b4a21",
+      "name": "Emilio Vilches Canales",
+      "year": "2012"
+    },
+    {
+      "_key": "3c99e1429e",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2012"
+    },
+    {
+      "_key": "e4bcacec66",
+      "name": "Benjamín Obando Vallejos",
+      "year": "2013"
+    },
+    {
+      "_key": "e0ab02ee00",
+      "name": "Hugo Carrillo Lincopi",
+      "year": "2016"
+    },
+    {
+      "_key": "f0fa012795",
+      "name": "Matías Godoy Campbell",
+      "year": "2013"
+    },
+    {
+      "_key": "249a8c00b3",
+      "name": "David Medina",
+      "year": "2017"
+    },
+    {
+      "_key": "e5b9916187",
+      "name": "Vicente Ocqueteau Canales",
+      "year": "2023"
+    },
+    {
+      "_key": "14db9c92b9",
+      "name": "Rodrigo Zelada Mancini",
+      "year": "2022"
+    },
+    {
+      "_key": "5a44234691",
+      "name": "Fabián Ceballos-Ulloa",
+      "year": "2025"
+    }
+  ],
+  "genealogy": {
+    "_type": "link",
+    "label": "Genealogy math project",
+    "url": "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=97974&fChrono=1"
+  },
   "postdocs": [
     {
       "_type": "block",
@@ -116,17 +349,8 @@
   "seo": {
     "metaTitle": "Teaching – Carlos Conca"
   },
-  "_unmapped": {
-    "doctoradosChile": [
-      "– Luis Friz Roa (2003); Associate Professor, University of Bío-Bío – Patricio Cumsille Atala (2006); Associate Professor, University of Bío-Bío – Rodrigo Lecaros Lira (2012); Associate Professor, Federico Santa María Technical University – Karina Vilches Ponce (2014); Full Professor; Vice-Rector, Catholic University of Maule – Matías Godoy Campbell (2016); Associate Professor, San Sebastián University – Viviana Solano Palma (2017); Associate Professor, University of Development – Donato Vásquez-Varas (2022); Assistant Professor, University of Chile – Rodrigo Zelada Mancini (2025)"
-    ],
-    "ingenierosYMagisteres": [
-      "Freddy Aguirre Astorga (1984) | Mauricio Sepúlveda Contreras (1988) | Rodrigo Schiefelbein Grossen (1988) | Mario Durán Toro (1991) | Axel Osses Alvarado (1998) | Leonardo Baffico Haramoto (1996) | Juan-Diego Dávila Bonczos (1996) | Lilian Salinas Ayala (1998) | Alejandro Omón Arancibia (2000) | Eduardo Cerpa Jeria (2004) | Rodrigo Lecaros Lira (2005) | Patricio Cumsille Atala (2006) | Felipe Macías Araya (2007) | León Sanz Bunster (2008) | Manuel Larenas Aravena (2010) | Patricio Cerda Reyes (2010) | Cristóbal Quiñiñao Montero (2010) | Francisco Unda Surawski (2012) | Emilio Vilches Canales (2012) | Rodrigo Lecaros Lira (2012) | Benjamín Obando Vallejos (2013) | Hugo Carrillo Lincopi (2016) | Matías Godoy Campbell (2013) | David Medina (2017) | Vicente Ocqueteau Canales (2023) | Rodrigo Zelada Mancini (2022) | Fabián Ceballos-Ulloa (2025).",
-      "[Genealogy math project](https://www.genealogy.math.ndsu.nodak.edu/id.php?id=97974&fChrono=1)"
-    ]
-  },
   "_review": [
     "Posición/país de cada doctorado: se separó el último tramo tras la coma como país; revisar que cada fila quedó bien.",
-    "Los doctorados en Chile y la lista de ingenieros/magísteres NO tienen campo en el schema actual (solo hay \"internacionales\"). Quedaron en _unmapped; decidir si se amplía el schema."
+    "Doctorados en Chile, ingenieros/magísteres y enlace de genealogía: se agregaron campos nuevos al schema (doctoratesChile, engineers, genealogy)."
   ]
 }

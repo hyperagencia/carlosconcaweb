@@ -131,10 +131,22 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
   y `POST /api/revalidate` (firma con `next-sanity/webhook`, 401/400/200,
   `revalidateTag(tipo, 'max')`). `next.config.ts` carga el `.env.local` de la
   raíz. Falta crear el webhook en Sanity: necesita URL pública (ver `INFRA.md`).
-- Siguiente paso: T4, schema y migración (`pnpm migrate -- --dry-run`, luego
-  `pnpm migrate`, verificar 197/197 y cargar el contenido de las 6 páginas × 2).
-- Pendiente del usuario: export de GSC/GA4 (línea base). Los 12 documentos
-  previos del dataset son solo `system.group` de Sanity: no hay contenido ajeno.
+- T4 hecho: 197 publicaciones migradas a Sanity (verificadas por categoría,
+  década, enlaces y registro a registro; idempotente) y 14 documentos de página
+  (6 páginas + `siteSettings`, ES/EN) cargados desde el WordPress con
+  `pnpm extract:wp` → `pnpm build:content` → `pnpm load:pages` (JSON revisable en
+  `data/contenido/`; no pisa lo editado en el Studio, `--force` sobrescribe).
+  `docenciaPage` se amplió con `doctoratesChile`, `engineers` y `genealogy`.
+  Todo lo del WordPress es la fuente válida de contenido.
+- Pendientes de contenido: la publicación 198 (el WP muestra 198, el JSON tiene
+  197) se agregará desde el Studio como prueba; revisar el contenido de cada área
+  de investigación (acordeón); traducir las bajadas del timeline EN; correo y
+  dirección de contacto, ORCID y retrato no existen en el WP. Las 2 tarjetas de
+  publicaciones de la home tienen contador dinámico no leído (solo se cargaron
+  1973 y +40). Los assets que vaya dejando el usuario entran por `assets/`.
+- Siguiente paso: Fase 3 (desktop): sistema de diseño, layout y las 6 páginas
+  leyendo de `web/lib/sanity/`; el usuario explica Figma componente a componente.
+- Pendiente del usuario: export de GSC/GA4 (línea base).
 
 ---
 

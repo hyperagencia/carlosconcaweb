@@ -63,7 +63,7 @@ impacto en tiempo y costo, según la cotización.
 
 - [ ] Monorepo, Next 16, Tailwind v4, Studio standalone
 - [ ] Schema de Sanity desplegado
-- [ ] Migración de las 197 publicaciones con verificación de integridad
+- [x] Migración de las 197 publicaciones con verificación de integridad
 - [ ] Enrutamiento localizado con las 12 URLs exactas
 - [ ] Capa de datos con `'use cache'` + `cacheTag` y webhook de revalidación
 

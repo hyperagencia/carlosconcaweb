@@ -48,6 +48,55 @@
       ]
     }
   ],
+  "doctoratesChile": [
+    {
+      "_key": "53e8e960cb",
+      "name": "Luis Friz Roa",
+      "year": "2003",
+      "position": "Profesor Asociado Universidad del Bío-Bío"
+    },
+    {
+      "_key": "5d75b5020d",
+      "name": "Patricio Cumsille Atala",
+      "year": "2006",
+      "position": "Profesor Asociado Universidad del Bío-Bío"
+    },
+    {
+      "_key": "1635d8466b",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2012",
+      "position": "Profesor Asociado Universidad Técnica Federico Santa María"
+    },
+    {
+      "_key": "15083bdba2",
+      "name": "Karina Vilches Ponce",
+      "year": "2014",
+      "position": "Profesora Titular; Vicerectora Universidad Católica del Maule"
+    },
+    {
+      "_key": "0615b4ad75",
+      "name": "Matías Godoy Campbell",
+      "year": "2016",
+      "position": "Profesor Asociado; Universidad San Sebatián"
+    },
+    {
+      "_key": "1cbbba51b3",
+      "name": "Viviana Solano Palma",
+      "year": "2017",
+      "position": "Profesora Asociada; Universidad del Desarrollo"
+    },
+    {
+      "_key": "9f3a054942",
+      "name": "Donato Vásquez-Varas",
+      "year": "2022",
+      "position": "Profesor Asistente; Universidad de Chile"
+    },
+    {
+      "_key": "e60dbdac82",
+      "name": "Rodrigo Zelada Mancini",
+      "year": "2025"
+    }
+  ],
   "doctorates": [
     {
       "_key": "0d1a6bbb89",
@@ -99,6 +148,148 @@
       "country": "Colombia"
     }
   ],
+  "engineers": [
+    {
+      "_key": "710799dc83",
+      "name": "Freddy Aguirre Astorga",
+      "year": "1984"
+    },
+    {
+      "_key": "4894358d49",
+      "name": "Mauricio Sepúlveda Contreras",
+      "year": "1988"
+    },
+    {
+      "_key": "19dc780e52",
+      "name": "Rodrigo Schiefelbein Grossen",
+      "year": "1988"
+    },
+    {
+      "_key": "b2e46a062d",
+      "name": "Mario Durán Toro",
+      "year": "1991"
+    },
+    {
+      "_key": "dfe4be21fd",
+      "name": "Axel Osses Alvarado",
+      "year": "1998"
+    },
+    {
+      "_key": "ceae83ae65",
+      "name": "Leonardo Baffico Haramoto",
+      "year": "1996"
+    },
+    {
+      "_key": "5cd19d3fb1",
+      "name": "Juan-Diego Dávila Bonczos",
+      "year": "1996"
+    },
+    {
+      "_key": "2ed4a82609",
+      "name": "Lilian Salinas Ayala",
+      "year": "1998"
+    },
+    {
+      "_key": "ac5b7701e0",
+      "name": "Alejandro Omón Arancibia",
+      "year": "2000"
+    },
+    {
+      "_key": "2c3fce8747",
+      "name": "Eduardo Cerpa Jeria",
+      "year": "2004"
+    },
+    {
+      "_key": "b33a361a3d",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2005"
+    },
+    {
+      "_key": "4af5fdd99f",
+      "name": "Patricio Cumsille Atala",
+      "year": "2006"
+    },
+    {
+      "_key": "a8597599e5",
+      "name": "Felipe Macías Araya",
+      "year": "2007"
+    },
+    {
+      "_key": "7ab8d0f4f4",
+      "name": "León Sanz Bunster",
+      "year": "2008"
+    },
+    {
+      "_key": "bbcdea8e37",
+      "name": "Manuel Larenas Aravena",
+      "year": "2010"
+    },
+    {
+      "_key": "7d30a75d1a",
+      "name": "Patricio Cerda Reyes",
+      "year": "2010"
+    },
+    {
+      "_key": "7bb7b6a061",
+      "name": "Cristóbal Quiñiñao Montero",
+      "year": "2010"
+    },
+    {
+      "_key": "536b88c5b0",
+      "name": "Francisco Unda Surawski",
+      "year": "2012"
+    },
+    {
+      "_key": "db1c5b4a21",
+      "name": "Emilio Vilches Canales",
+      "year": "2012"
+    },
+    {
+      "_key": "3c99e1429e",
+      "name": "Rodrigo Lecaros Lira",
+      "year": "2012"
+    },
+    {
+      "_key": "e4bcacec66",
+      "name": "Benjamín Obando Vallejos",
+      "year": "2013"
+    },
+    {
+      "_key": "e0ab02ee00",
+      "name": "Hugo Carrillo Lincopi",
+      "year": "2016"
+    },
+    {
+      "_key": "f0fa012795",
+      "name": "Matías Godoy Campbell",
+      "year": "2013"
+    },
+    {
+      "_key": "249a8c00b3",
+      "name": "David Medina",
+      "year": "2017"
+    },
+    {
+      "_key": "e5b9916187",
+      "name": "Vicente Ocqueteau Canales",
+      "year": "2023"
+    },
+    {
+      "_key": "14db9c92b9",
+      "name": "Rodrigo Zelada Mancini",
+      "year": "2022"
+    },
+    {
+      "_key": "5a44234691",
+      "name": "Fabián Ceballos-Ulloa",
+      "year": "2025"
+    }
+  ],
+  "genealogy": {
+    "_type": "link",
+    "label": "Genealogy math project",
+    "url": "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=97974&fChrono=1"
+  },
   "postdocs": [
     {
       "_type": "block",
@@ -158,24 +349,8 @@
   "seo": {
     "metaTitle": "Docencia – Carlos Conca"
   },
-  "_unmapped": {
-    "doctoradosChile": [
-      "– Luis Friz Roa (2003); Profesor Asociado Universidad del Bío-Bío",
-      "– Patricio Cumsille Atala (2006); Profesor Asociado Universidad del Bío-Bío",
-      "– Rodrigo Lecaros Lira (2012); Profesor Asociado Universidad Técnica Federico Santa María",
-      "– Karina Vilches Ponce (2014); Profesora Titular; Vicerectora Universidad Católica del Maule",
-      "– Matías Godoy Campbell (2016); Profesor Asociado; Universidad San Sebatián",
-      "– Viviana Solano Palma (2017); Profesora Asociada; Universidad del Desarrollo",
-      "– Donato Vásquez-Varas (2022); Profesor Asistente; Universidad de Chile",
-      "– Rodrigo Zelada Mancini (2025)"
-    ],
-    "ingenierosYMagisteres": [
-      "Freddy Aguirre Astorga (1984) | Mauricio Sepúlveda Contreras (1988) | Rodrigo Schiefelbein Grossen (1988) | Mario Durán Toro (1991) | Axel Osses Alvarado (1998) | Leonardo Baffico Haramoto (1996) | Juan-Diego Dávila Bonczos (1996) | Lilian Salinas Ayala (1998) | Alejandro Omón Arancibia (2000) | Eduardo Cerpa Jeria (2004) | Rodrigo Lecaros Lira (2005) | Patricio Cumsille Atala (2006) | Felipe Macías Araya (2007) | León Sanz Bunster (2008) | Manuel Larenas Aravena (2010) | Patricio Cerda Reyes (2010) | Cristóbal Quiñiñao Montero (2010) | Francisco Unda Surawski (2012) | Emilio Vilches Canales (2012) | Rodrigo Lecaros Lira (2012) | Benjamín Obando Vallejos (2013) | Hugo Carrillo Lincopi (2016) | Matías Godoy Campbell (2013) | David Medina (2017) | Vicente Ocqueteau Canales (2023) | Rodrigo Zelada Mancini (2022) | Fabián Ceballos-Ulloa (2025).",
-      "[Genealogy math project](https://www.genealogy.math.ndsu.nodak.edu/id.php?id=97974&fChrono=1)"
-    ]
-  },
   "_review": [
     "Posición/país de cada doctorado: se separó el último tramo tras la coma como país; revisar que cada fila quedó bien.",
-    "Los doctorados en Chile y la lista de ingenieros/magísteres NO tienen campo en el schema actual (solo hay \"internacionales\"). Quedaron en _unmapped; decidir si se amplía el schema."
+    "Doctorados en Chile, ingenieros/magísteres y enlace de genealogía: se agregaron campos nuevos al schema (doctoratesChile, engineers, genealogy)."
   ]
 }

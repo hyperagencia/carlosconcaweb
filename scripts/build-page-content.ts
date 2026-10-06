@@ -109,7 +109,7 @@ function home(locale: Locale, p: Page): Doc {
   const numLine = (l: string) => /^(## )?\d{2,4}$/.test(l)
   L.forEach((l, i) => {
     if (numLine(l) && L[i + 1] && !isH(L[i + 1])) {
-      const value = text(l)
+      const value = (L[i - 1] === '+' ? '+' : '') + text(l)
       stats.push({ _key: key(value), value, label: L[i + 1] })
     }
   })
@@ -234,8 +234,34 @@ function docencia(locale: Locale, p: Page): Doc {
   const chile = group(/^\*\*(Doctorados con posición académica en Chile|PhDs with Academic Positions in Chile):\*\*$/)
   const eng = group(/^\*\*(Ingenieros Civiles|Civil Engineers)/)
 
-  const doctorates = intl
-    .filter((l) => l.startsWith('–'))
+  // En EN las filas vienen unidas en un solo párrafo, separadas por " – "
+  const entries = (ls: string[]) =>
+    ls
+      .filter((l) => l.startsWith('–'))
+      .flatMap((l) => l.split(/\s+–\s+/))
+      .map((x) => '– ' + x.replace(/^–\s*/, '').trim())
+  const person = (l: string) => {
+    const m = l.match(/^–\s*(.+?)\s*\((\d{4})\)\s*;?\s*(.*)$/)
+    return m
+      ? { _key: key(l), name: m[1], year: m[2], ...(m[3] ? { position: m[3] } : {}) }
+      : (review.push(`Fila sin formato reconocido: ${l}`), { _key: key(l), name: l })
+  }
+  const doctoratesChile = entries(chile).map(person)
+  const engineers = eng
+    .filter((l) => l.includes('|'))
+    .flatMap((l) => l.replace(/\.$/, '').split('|'))
+    .map((x) => x.trim())
+    .filter(Boolean)
+    .map((x) => {
+      const m = x.match(/^(.+?)\s*\((\d{4})\)$/)
+      return { _key: key(x), name: m ? m[1] : x, ...(m ? { year: m[2] } : {}) }
+    })
+  const genealogyMd = eng.find((l) => /^\[.+\]\(.+\)$/.test(l))?.match(/^\[(.+?)\]\((.+?)\)$/)
+  const genealogy = genealogyMd
+    ? { _type: 'link', label: genealogyMd[1], url: genealogyMd[2] }
+    : undefined
+
+  const doctorates = entries(intl)
     .map((l) => {
       const m = l.match(/^–\s*(.+?)\s*\((\d{4})\)\s*;?\s*(.*)$/)
       if (!m) {
@@ -258,7 +284,7 @@ function docencia(locale: Locale, p: Page): Doc {
 
   review.push(
     'Posición/país de cada doctorado: se separó el último tramo tras la coma como país; revisar que cada fila quedó bien.',
-    'Los doctorados en Chile y la lista de ingenieros/magísteres NO tienen campo en el schema actual (solo hay "internacionales"). Quedaron en _unmapped; decidir si se amplía el schema.',
+    'Doctorados en Chile, ingenieros/magísteres y enlace de genealogía: se agregaron campos nuevos al schema (doctoratesChile, engineers, genealogy).',
   )
 
   return {
@@ -266,11 +292,13 @@ function docencia(locale: Locale, p: Page): Doc {
     heading: text(L[0]),
     eyebrow: text(L[eyebrowAt]),
     intro: blocks([...L.slice(eyebrowAt + 1, guideAt), text(L[guideAt])]),
+    doctoratesChile,
     doctorates,
+    engineers,
+    ...(genealogy ? { genealogy } : {}),
     postdocs: blocks(L.slice(postdocsAt + 1, programsAt)),
     programs,
     seo: seo(p.title),
-    _unmapped: { doctoradosChile: chile, ingenierosYMagisteres: eng },
     _review: review,
   }
 }

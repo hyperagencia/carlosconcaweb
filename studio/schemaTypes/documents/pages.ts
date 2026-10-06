@@ -181,6 +181,22 @@ export const docenciaPage = defineType({
     defineField({ name: 'eyebrow', title: 'Antetítulo', type: 'string' }),
     defineField({ name: 'intro', title: 'Introducción', type: 'array', of: [{ type: 'block' }] }),
     defineField({
+      name: 'doctoratesChile',
+      title: 'Doctorados con posición académica en Chile',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({ name: 'name', title: 'Nombre', type: 'string' }),
+            defineField({ name: 'year', title: 'Año', type: 'string' }),
+            defineField({ name: 'position', title: 'Posición actual', type: 'string' }),
+          ],
+          preview: { select: { title: 'name', subtitle: 'position' } },
+        }),
+      ],
+    }),
+    defineField({
       name: 'doctorates',
       title: 'Doctorados con posición académica internacional',
       type: 'array',
@@ -196,6 +212,27 @@ export const docenciaPage = defineType({
           preview: { select: { title: 'name', subtitle: 'position' } },
         }),
       ],
+    }),
+    defineField({
+      name: 'engineers',
+      title: 'Ingenieros civiles matemáticos, bioinformáticos y magísteres',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          fields: [
+            defineField({ name: 'name', title: 'Nombre', type: 'string' }),
+            defineField({ name: 'year', title: 'Año', type: 'string' }),
+          ],
+          preview: { select: { title: 'name', subtitle: 'year' } },
+        }),
+      ],
+    }),
+    defineField({
+      name: 'genealogy',
+      title: 'Enlace al Mathematics Genealogy Project',
+      description: 'Página con el árbol académico de sus estudiantes. Pega la dirección completa.',
+      type: 'link',
     }),
     defineField({
       name: 'postdocs',

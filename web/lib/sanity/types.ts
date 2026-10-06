@@ -261,6 +261,12 @@ export type DocenciaPage = {
     _type: "block";
     _key: string;
   }>;
+  doctoratesChile?: Array<{
+    name?: string;
+    year?: string;
+    position?: string;
+    _key: string;
+  }>;
   doctorates?: Array<{
     name?: string;
     year?: string;
@@ -268,6 +274,12 @@ export type DocenciaPage = {
     country?: string;
     _key: string;
   }>;
+  engineers?: Array<{
+    name?: string;
+    year?: string;
+    _key: string;
+  }>;
+  genealogy?: Link;
   postdocs?: Array<{
     children?: Array<{
       marks?: Array<string>;
@@ -801,6 +813,12 @@ export type DOCENCIA_PAGE_QUERY_RESULT = {
     _type: "block";
     _key: string;
   }>;
+  doctoratesChile?: Array<{
+    name?: string;
+    year?: string;
+    position?: string;
+    _key: string;
+  }>;
   doctorates?: Array<{
     name?: string;
     year?: string;
@@ -808,6 +826,12 @@ export type DOCENCIA_PAGE_QUERY_RESULT = {
     country?: string;
     _key: string;
   }>;
+  engineers?: Array<{
+    name?: string;
+    year?: string;
+    _key: string;
+  }>;
+  genealogy?: Link;
   postdocs?: Array<{
     children?: Array<{
       marks?: Array<string>;
