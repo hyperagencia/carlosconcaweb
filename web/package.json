@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
-    "typegen": "echo \"typegen: pendiente hasta T3 (queries)\""
+    "typegen": "echo \"typegen: pendiente hasta T3 (queries)\"",
+    "test:routes": "vitest run -c vitest.routes.config.mts"
   },
   "dependencies": {
     "next": "16.3.8",

@@ -121,8 +121,13 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
   páginas stub en las 6 rutas), `studio/` (schema dividido en `schemaTypes/`,
   structure con publicaciones primero), CI, `INFRA.md`. `pnpm typecheck && pnpm
   lint && pnpm test && pnpm build` pasan; `pnpm migrate -- --dry-run` valida 197/197.
-- Siguiente paso: T2, test de regresión de las 12 URLs (200 sin redirect
-  intermedio) en CI; luego T3 (capa de datos) y T4 (migración).
+- T2 hecho: `pnpm build && pnpm test:routes` prueba contra `next start` las 12
+  URLs (200 sin redirect, `lang` correcto), el salto sin slash → con slash y
+  `/en/inicio-english/` → 301 `/en/`. Corre en CI tras el build. Next emite 308
+  (no 301) en el redirect de trailing slash; es equivalente para SEO y no es
+  configurable. El resto de redirects legacy va en la Fase 5.
+- Siguiente paso: T3, capa de datos (cliente Sanity, queries con typegen,
+  `'use cache'` + `cacheTag`, `/api/revalidate`); luego T4 (migración).
 - Pendiente del usuario: export de GSC/GA4 (línea base). El dataset trae 12
   documentos previos sin revisar antes de `pnpm migrate`.
 

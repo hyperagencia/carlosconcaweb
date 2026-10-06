@@ -12,7 +12,8 @@
     "lint": "pnpm -r --if-present lint",
     "test": "pnpm --filter web test",
     "typegen": "pnpm --filter studio typegen && pnpm --filter web typegen",
-    "migrate": "tsx --env-file=.env.local scripts/migrate-publications.ts"
+    "migrate": "tsx --env-file=.env.local scripts/migrate-publications.ts",
+    "test:routes": "pnpm --filter web test:routes"
   },
   "devDependencies": {
     "@sanity/client": "^8.9.0",
