@@ -94,7 +94,7 @@ async function main() {
   let replaced = 0
   for (const { d, exists } of plan) {
     if (exists && !FORCE) continue
-    const doc: Doc = Object.fromEntries(Object.entries(d).filter(([k]) => !NOTES.includes(k)))
+    const doc = Object.fromEntries(Object.entries(d).filter(([k]) => !NOTES.includes(k))) as Doc
 
     if (d._type === 'siteSettings' && typeof d._cvSource === 'string') {
       const res = await fetch(d._cvSource)
