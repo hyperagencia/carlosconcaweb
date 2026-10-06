@@ -164,6 +164,8 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
 - Sanity: cuenta de Carlos, proyecto `ntv5ihqf`, dataset `production` (lectura
   pública; las lecturas del sitio no usan token). El token de escritura vence el
   2027-01-03 y quedó expuesto en una conversación: rotarlo al terminar de desarrollar.
+- Studio desplegado (2026-10-06): https://carlosconca.sanity.studio (`pnpm --filter studio deploy`,
+  `appId` en `studio/sanity.cli.ts`).
 - Vercel: plan gratuito, **sin conectar** hasta tener acceso. Solo local.
 - **Sin formulario de contacto ni Resend por ahora**: `/contacto` es informativa.
 - Figma (`loI5LpwjO7N6uRGsD73gbl`, "Carlos Conca Wireframes"): es un wireframe con
