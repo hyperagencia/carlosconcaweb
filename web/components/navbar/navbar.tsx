@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import { useSyncExternalStore } from 'react'
 import { Link, usePathname } from '@/lib/i18n/navigation'
 import { cn } from '@/lib/cn'
+import { useDark } from '@/lib/use-dark'
 import { ThemeToggle } from '../theme-toggle'
 import { LocaleSwitch } from './locale-switch'
 import { useNavTone } from './use-nav-tone'
@@ -19,24 +19,11 @@ const ITEMS = [
   { href: '/contacto', key: 'contact' },
 ] as const
 
-function subscribeTheme(onChange: () => void) {
-  const observer = new MutationObserver(onChange)
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class'],
-  })
-  return () => observer.disconnect()
-}
-
 export function Navbar() {
   const t = useTranslations('Nav')
   const pathname = usePathname()
   const sectionTone = useNavTone()
-  const siteDark = useSyncExternalStore(
-    subscribeTheme,
-    () => document.documentElement.classList.contains('dark'),
-    () => false,
-  )
+  const siteDark = useDark()
 
   // En modo oscuro del sitio la navbar siempre es oscura; en claro sigue a la sección.
   const dark = siteDark || sectionTone === 'dark'

@@ -35,6 +35,21 @@
   --nav-h: 5rem;
 }
 
+/* Oscuro: por preferencia del sistema (sin JS) o forzado con .dark.
+   .light fuerza claro aunque el sistema sea oscuro. */
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --bg: #1c1c1c;
+    --panel: #393939;
+    --card: #393939;
+    --card-hover: #4a4a4a;
+    --surface: #393939;
+    --fg: #f7f7f7;
+    --accent: #f7f7f7;
+    --border: color-mix(in srgb, #f7f7f7 35%, transparent);
+    color-scheme: dark;
+  }
+}
 .dark {
   --bg: #1c1c1c;
   --panel: #393939;
@@ -64,6 +79,9 @@ html {
 }
 html.dark {
   color-scheme: dark;
+}
+html.light {
+  color-scheme: light;
 }
 
 body {

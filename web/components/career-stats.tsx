@@ -12,7 +12,7 @@ function QuoteDocIcon() {
       stroke="currentColor"
       strokeWidth="3"
       aria-hidden="true"
-      className="h-[clamp(3rem,4.5vw,4.5rem)] w-auto"
+      className="h-[clamp(3rem,4.5vw,4.5rem)] w-auto self-start"
     >
       <rect x="4" y="4" width="56" height="72" />
       <path d="M18 30h28M18 38h28M18 46h28" strokeLinecap="round" />
@@ -25,8 +25,8 @@ function QuoteDocIcon() {
 }
 
 const cardClass =
-  'flex h-full min-h-[clamp(11rem,19vw,17rem)] flex-col justify-between gap-6 rounded-card bg-card p-[clamp(1.25rem,2.4vw,2.5rem)] transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent'
-const linkCardClass = `${cardClass} hover:bg-card-hover`
+  'flex h-full min-h-[clamp(11rem,19vw,17rem)] flex-col justify-between gap-6 rounded-card bg-card p-[clamp(1.25rem,2.4vw,2.5rem)] transition-colors duration-200 hover:bg-card-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent'
+const linkCardClass = cardClass
 const labelClass = 'text-[clamp(0.875rem,1.15vw,1.125rem)] leading-snug'
 const valueClass =
   'text-[clamp(2.5rem,5vw,4.75rem)] leading-none tracking-tight'

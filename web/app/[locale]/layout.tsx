@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { Zalando_Sans } from 'next/font/google'
+import { ThemeSync } from '@/components/theme-sync'
 import { Navbar } from '@/components/navbar/navbar'
 import { routing } from '@/lib/i18n/routing'
 
@@ -13,8 +14,6 @@ const zalando = Zalando_Sans({
   display: 'swap',
 })
 
-// Fija .dark antes de pintar: tema guardado, o preferencia del sistema.
-const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -37,16 +36,10 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
 
   return (
-    <html lang={locale} className={zalando.variable} suppressHydrationWarning>
-      <head>
-        {/* Solo en el render de servidor: React 19 avisa de <script> en renders
-            de cliente (p. ej. al cambiar de idioma) y el DOM ya lo tiene. */}
-        {typeof window === 'undefined' && (
-          <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        )}
-      </head>
+    <html lang={locale} className={zalando.variable}>
       <body>
         <NextIntlClientProvider>
+          <ThemeSync />
           <Navbar />
           {children}
         </NextIntlClientProvider>

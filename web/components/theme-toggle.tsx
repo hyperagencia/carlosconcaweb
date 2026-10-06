@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import { useSyncExternalStore } from 'react'
+import { isDarkNow, useDark } from '@/lib/use-dark'
 import { cn } from '@/lib/cn'
 
 /**
@@ -11,24 +11,14 @@ import { cn } from '@/lib/cn'
  * Atribución: Skiper UI — https://skiper-ui.com (@gurvinder-singh02).
  */
 
-function subscribe(onChange: () => void) {
-  const observer = new MutationObserver(onChange)
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ['class'],
-  })
-  return () => observer.disconnect()
-}
-
-const isDarkNow = () => document.documentElement.classList.contains('dark')
-
 export function ThemeToggle({ className }: { className?: string }) {
   const t = useTranslations('Nav')
-  const isDark = useSyncExternalStore(subscribe, isDarkNow, () => false)
+  const isDark = useDark()
 
   function toggle() {
     const next = !isDarkNow()
-    document.documentElement.classList.toggle('dark', next)
+    document.documentElement.classList.remove('dark', 'light')
+    document.documentElement.classList.add(next ? 'dark' : 'light')
     try {
       localStorage.setItem('theme', next ? 'dark' : 'light')
     } catch {}
