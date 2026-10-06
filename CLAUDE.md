@@ -107,8 +107,8 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
 
 - Repo: `github.com/hyperagencia/carlosconcaweb` (Hyper). Se trabaja en
   `~/dev/carlosconca`, **fuera de iCloud**. Commit inicial hecho, sin push.
-- Sanity: se desarrolla directo en la cuenta de Carlos (pendiente `projectId` y
-  token de escritura, en `.env.local`, nunca al repo).
+- Sanity: se desarrolla directo en la cuenta de Carlos. Proyecto `ntv5ihqf`,
+  dataset `production`. Token de escritura en `.env.local`, nunca al repo.
 - Vercel: plan gratuito, **sin conectar** hasta tener acceso. Solo local.
 - **Sin formulario de contacto ni Resend por ahora**: `/contacto` es informativa.
 - Figma: el usuario explica los componentes uno a uno; mobile es más simple.
@@ -117,9 +117,14 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
 - Redirects por cubrir: `/sample-page/`, `/work/`, posts, portfolio, taxonomías
   y `/en/inicio-english/`.
 - `docs/sanity-schema-conca.draft.ts` es el schema borrador; irá a `studio/`.
-- Siguiente paso: andamiaje T1 (monorepo pnpm, Next 16, Tailwind v4, next-intl,
-  studio), luego test de las 12 URLs (T2). Pendiente del usuario: credenciales
-  Sanity y export de GSC/GA4 (línea base).
+- T1 (andamiaje) hecho: monorepo pnpm, `web/` (Next 16, next-intl, Tailwind v4,
+  páginas stub en las 6 rutas), `studio/` (schema dividido en `schemaTypes/`,
+  structure con publicaciones primero), CI, `INFRA.md`. `pnpm typecheck && pnpm
+  lint && pnpm test && pnpm build` pasan; `pnpm migrate -- --dry-run` valida 197/197.
+- Siguiente paso: T2, test de regresión de las 12 URLs (200 sin redirect
+  intermedio) en CI; luego T3 (capa de datos) y T4 (migración).
+- Pendiente del usuario: export de GSC/GA4 (línea base). El dataset trae 12
+  documentos previos sin revisar antes de `pnpm migrate`.
 
 ---
 

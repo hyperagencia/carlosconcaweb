@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Tokens de Figma pendientes: no inventar valores ni hardcodear colores
+   fuera de @theme. Se completan cuando se explique el sistema de diseño. */
+@theme {
+}

@@ -1,0 +1,22 @@
+{
+  "Meta": {
+    "siteName": "Carlos Conca",
+    "description": "Carlos Conca, Chilean mathematician, National Prize in Exact Sciences 2003."
+  },
+  "Nav": {
+    "home": "Home",
+    "publications": "Publications",
+    "research": "Research",
+    "teaching": "Teaching",
+    "biography": "Biography",
+    "contact": "Contact"
+  },
+  "Categories": {
+    "articulo-wos": "WoS articles",
+    "actas-capitulos": "Proceedings and chapters",
+    "articulo-indexado": "Indexed articles",
+    "revista-nacional": "National journals",
+    "otras": "Other",
+    "libro": "Books"
+  }
+}

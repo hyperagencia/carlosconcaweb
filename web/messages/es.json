@@ -1,0 +1,22 @@
+{
+  "Meta": {
+    "siteName": "Carlos Conca",
+    "description": "Carlos Conca, matemático chileno, Premio Nacional de Ciencias Exactas 2003."
+  },
+  "Nav": {
+    "home": "Inicio",
+    "publications": "Publicaciones",
+    "research": "Investigación",
+    "teaching": "Docencia",
+    "biography": "Biografía",
+    "contact": "Contacto"
+  },
+  "Categories": {
+    "articulo-wos": "Artículos WoS",
+    "actas-capitulos": "Actas y capítulos",
+    "articulo-indexado": "Artículos indexados",
+    "revista-nacional": "Revistas nacionales",
+    "otras": "Otras",
+    "libro": "Libros"
+  }
+}
