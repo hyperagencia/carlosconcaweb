@@ -23,6 +23,18 @@ en producción, en el proyecto de Vercel.
 | `SANITY_WRITE_TOKEN` | solo `pnpm migrate`; permisos de escritura |
 | `SANITY_REVALIDATE_SECRET` | firma del webhook que invalida caché (T3) |
 
+## Webhook de revalidación (pendiente: necesita URL pública)
+
+Cuando exista el sitio desplegado, en sanity.io/manage → API → Webhooks:
+
+- URL: `https://<dominio>/api/revalidate/`, método POST
+- Secret: el valor de `SANITY_REVALIDATE_SECRET` (en Vercel y en `.env.local`)
+- Dataset: `production`; disparar en create, update y delete
+- Filtro: `_type in ["publication","homePage","biografiaPage","investigacionPage","docenciaPage","publicacionesPage","contactoPage","siteSettings"]`
+- Proyección: `{_type}`
+
+El endpoint devuelve 401 sin firma válida y 400 si el tipo no es uno de los anteriores.
+
 ## Migración de hosting
 
 Pendiente: se documenta en la Fase 6 (cutover).

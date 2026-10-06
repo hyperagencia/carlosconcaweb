@@ -10,7 +10,7 @@
     "build": "sanity build",
     "deploy": "sanity deploy",
     "typecheck": "tsc --noEmit",
-    "typegen": "sanity schema extract --path=schema.json && sanity typegen generate"
+    "typegen": "sanity schema extract --path=schema.json"
   },
   "dependencies": {
     "@sanity/document-internationalization": "^6.2.39",

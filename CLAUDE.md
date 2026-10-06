@@ -126,10 +126,15 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
   `/en/inicio-english/` → 301 `/en/`. Corre en CI tras el build. Next emite 308
   (no 301) en el redirect de trailing slash; es equivalente para SEO y no es
   configurable. El resto de redirects legacy va en la Fase 5.
-- Siguiente paso: T3, capa de datos (cliente Sanity, queries con typegen,
-  `'use cache'` + `cacheTag`, `/api/revalidate`); luego T4 (migración).
-- Pendiente del usuario: export de GSC/GA4 (línea base). El dataset trae 12
-  documentos previos sin revisar antes de `pnpm migrate`.
+- T3 hecho: `web/lib/sanity/` (cliente sin token, queries con `defineQuery`,
+  tipos generados con `pnpm typegen`, lecturas `'use cache'` con tag = `_type`)
+  y `POST /api/revalidate` (firma con `next-sanity/webhook`, 401/400/200,
+  `revalidateTag(tipo, 'max')`). `next.config.ts` carga el `.env.local` de la
+  raíz. Falta crear el webhook en Sanity: necesita URL pública (ver `INFRA.md`).
+- Siguiente paso: T4, schema y migración (`pnpm migrate -- --dry-run`, luego
+  `pnpm migrate`, verificar 197/197 y cargar el contenido de las 6 páginas × 2).
+- Pendiente del usuario: export de GSC/GA4 (línea base). Los 12 documentos
+  previos del dataset son solo `system.group` de Sanity: no hay contenido ajeno.
 
 ---
 
@@ -153,7 +158,7 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
   }
   ```
 
-- **Invalidación**: `revalidateTag(tag, { profile: 'max' })`. Sin el `profile`
+- **Invalidación**: `revalidateTag(tag, 'max')` (el perfil es el 2.º argumento posicional, según la doc de Next 16.3). Sin el perfil
   el comportamiento es expiración inmediata, que provoca un cache miss
   bloqueante en la primera visita después de publicar. Con `'max'` se sirve
   stale-while-revalidate.

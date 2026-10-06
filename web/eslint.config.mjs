@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Generado por sanity typegen
+    "lib/sanity/types.ts",
   ]),
 ]);
 

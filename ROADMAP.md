@@ -188,7 +188,7 @@ contrato con el SEO existente y debe correr en CI de aquí en adelante.
 - Queries GROQ con `defineQuery` + `pnpm typegen`
 - Envoltorio `'use cache'` / `cacheLife('max')` / `cacheTag`
 - Route handler `/api/revalidate` validando firma con `parseBody` de
-  `next-sanity/webhook` y llamando `revalidateTag(tag, { profile: 'max' })`
+  `next-sanity/webhook` y llamando `revalidateTag(tag, 'max')`
 - Webhook configurado en Sanity con filtro por `_type`
 
 ## T4 · Schema y migración

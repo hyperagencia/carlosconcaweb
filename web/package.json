@@ -9,12 +9,16 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
-    "typegen": "echo \"typegen: pendiente hasta T3 (queries)\"",
+    "typegen": "sanity typegen generate",
     "test:routes": "vitest run -c vitest.routes.config.mts"
   },
   "dependencies": {
+    "@next/env": "^16.3.8",
+    "@sanity/client": "^8.9.0",
+    "@sanity/webhook": "^4.0.4",
     "next": "16.3.8",
     "next-intl": "^4.14.9",
+    "next-sanity": "^13.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -25,6 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "sanity": "^6.17.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^5.0.3"
