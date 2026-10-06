@@ -16,7 +16,7 @@ export function LocaleSwitch() {
     <div
       role="group"
       aria-label={t('language')}
-      className="flex items-center rounded-full border border-current/70 p-0.5"
+      className="flex h-10 items-center rounded-full border border-current/70 p-0.5"
     >
       {routing.locales.map((locale) => {
         const selected = locale === active
@@ -28,14 +28,14 @@ export function LocaleSwitch() {
             aria-pressed={selected}
             onClick={() => !selected && router.replace(pathname, { locale })}
             className={cn(
-              'relative rounded-full px-3 py-1 text-sm uppercase transition-opacity',
-              !selected && 'opacity-70 hover:opacity-100',
+              'relative h-full rounded-full px-3.5 text-sm uppercase transition-opacity',
+              selected ? 'text-ink-900' : 'opacity-70 hover:opacity-100',
             )}
           >
             {selected && (
               <motion.span
                 layoutId="locale-indicator"
-                className="absolute inset-0 rounded-full bg-current opacity-15"
+                className="absolute inset-0 rounded-full bg-paper-50"
                 transition={{ type: 'spring', stiffness: 500, damping: 40 }}
               />
             )}

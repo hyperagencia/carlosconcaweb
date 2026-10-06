@@ -23,5 +23,9 @@
     "revista-nacional": "National journals",
     "otras": "Other",
     "libro": "Books"
+  },
+  "Hero": {
+    "photoAlt": "Carlos Conca explaining at a whiteboard",
+    "facultyAlt": "Faculty of Physical and Mathematical Sciences, University of Chile"
   }
 }

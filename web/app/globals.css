@@ -14,10 +14,12 @@
   --font-sans: var(--font-zalando), ui-sans-serif, system-ui, sans-serif;
 
   --radius-pill: 9999px;
+  --radius-card: 20px;
 }
 
 :root {
-  --bg: #e5e5e5;
+  --bg: #f1f0ef;
+  --panel: #e6e6e6;
   --surface: #f7f7f7;
   --fg: #1c1c1c;
   --accent: #1c1c1c;
@@ -33,6 +35,7 @@
 
 .dark {
   --bg: #1c1c1c;
+  --panel: #393939;
   --surface: #393939;
   --fg: #f7f7f7;
   --accent: #f7f7f7;
@@ -41,6 +44,7 @@
 
 @theme inline {
   --color-bg: var(--bg);
+  --color-panel: var(--panel);
   --color-surface: var(--surface);
   --color-fg: var(--fg);
   --color-accent: var(--accent);

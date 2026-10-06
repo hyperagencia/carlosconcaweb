@@ -39,7 +39,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={zalando.variable} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Solo en el render de servidor: React 19 avisa de <script> en renders
+            de cliente (p. ej. al cambiar de idioma) y el DOM ya lo tiene. */}
+        {typeof window === 'undefined' && (
+          <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        )}
       </head>
       <body>
         <NextIntlClientProvider>

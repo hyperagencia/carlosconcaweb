@@ -23,5 +23,9 @@
     "revista-nacional": "Revistas nacionales",
     "otras": "Otras",
     "libro": "Libros"
+  },
+  "Hero": {
+    "photoAlt": "Carlos Conca explicando en una pizarra",
+    "facultyAlt": "Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile"
   }
 }

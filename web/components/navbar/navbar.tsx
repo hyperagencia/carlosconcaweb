@@ -71,7 +71,7 @@ export function Navbar() {
                     href={href}
                     aria-current={current ? 'page' : undefined}
                     className={cn(
-                      'relative block rounded-full px-4 py-2 text-base',
+                      'relative flex h-10 items-center rounded-full px-4 text-base',
                       outline && 'border border-current/70',
                       current && 'text-ink-900',
                     )}
