@@ -1,0 +1,81 @@
+{
+  "_id": "biografiaPage-es",
+  "_type": "biografiaPage",
+  "language": "es",
+  "heading": "Biografía",
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "25494a0710",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "3cf5c4edc1",
+          "text": "Nacido en el seno de una familia de inmigrantes sardos, Carlos Conca descubrió su vocación matemática desde temprana edad en las aulas del Colegio San Gabriel de Santiago. Lo que comenzó como una curiosidad infantil se transformó en una carrera excepcional que lo llevó de Chile a Francia y de vuelta, construyendo puentes entre la matemática fundamental y sus aplicaciones reales.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "ec87da4089",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "4b5d7137b6",
+          "text": "Con 54 años (desde 1973) de trayectoria ininterrumpida, Conca representa una generación de científicos chilenos que no solo alcanzaron la excelencia internacional, sino que regresaron para transformar la educación y la investigación en su país. Primer chileno distinguido con un Doctor Honoris Causa por el gobierno francés, Premio Nacional de Ciencias Exactas, y cofundador de tres centros de investigación nacionales, su legado trasciende las ecuaciones: formó 16 doctores que hoy ocupan posiciones académicas en ocho países.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "_key": "c6ecc4ab1d",
+      "name": "Cátedra Presidencial en Ciencias Matemáticas",
+      "description": "Evaluada por un jurado internacional presidido por el Premio Nobel de Química Rudolph Marcus (1990), junto a destacados científicos de Princeton, Cambridge, Göttingen y París.",
+      "year": "1996"
+    },
+    {
+      "_key": "6421cc532c",
+      "name": "Doctor Honoris Causa - Universidad de Metz, Francia",
+      "description": "Primera distinción de este tipo otorgada a un chileno por el gobierno francés, en reconocimiento a su trabajo sobre estructuras fluido-sólido en centrales nucleares.",
+      "year": "1998"
+    },
+    {
+      "_key": "f38637903a",
+      "name": "Premio Nacional de Ciencias Exactas",
+      "description": "El máximo galardón científico de Chile, reconociendo sus aportes al análisis matemático y la formación de capital humano avanzado.",
+      "year": "2003"
+    },
+    {
+      "_key": "1327588c3e",
+      "name": "Premio Ramón Salas Edwards",
+      "description": "Reconocimiento nacional del Instituto de Ingenieros de Chile a la mejor innovación tecnológica, por el desarrollo del ecógrafo portátil TAOTE.",
+      "year": "2016"
+    },
+    {
+      "_key": "20d28a5596",
+      "name": "Academia Chilena de Ciencias",
+      "description": "Miembro Correspondiente (2002) y Miembro de Número (desde 2012) del Instituto de Chile."
+    },
+    {
+      "_key": "c01af62de9",
+      "name": "Premios de Excelencia Docente",
+      "description": "Reconocido en 1995 y 2006 por estudiantes de pregrado de la Universidad de Chile como mejor docente."
+    },
+    {
+      "_key": "339a98f0fb",
+      "name": "Otros reconocimientos",
+      "description": "Premio Manuel Noriega Morales OEA (1994) | Premio Manuel Montt (1996) | Ex-Alumno Destacado Colegio San Gabriel (2003) | Medallas Rectoral y Profesor Titular UChile | Premio Generación de Conocimiento Científico (2022)."
+    }
+  ],
+  "seo": {
+    "metaTitle": "Biografía – Carlos Conca"
+  },
+  "_review": []
+}

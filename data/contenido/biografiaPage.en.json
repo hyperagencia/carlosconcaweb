@@ -1,0 +1,81 @@
+{
+  "_id": "biografiaPage-en",
+  "_type": "biografiaPage",
+  "language": "en",
+  "heading": "Biography",
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "dfc632d9d6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "4740371d32",
+          "text": "Born into a family of Sardinian immigrants, Carlos Conca discovered his mathematical vocation at an early age in the classrooms of the San Gabriel School in Santiago. What began as a childhood curiosity transformed into an exceptional career that took him from Chile to France and back, building bridges between fundamental mathematics and its real-world applications.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "da39cda8d3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "3009990ae1",
+          "text": "With 54 years (since 1973) of uninterrupted career, Conca represents a generation of Chilean scientists who not only achieved international excellence but also returned to transform education and research in their country. The first Chilean to be awarded an honorary doctorate by the French government, recipient of the National Prize for Exact Sciences, and co-founder of three national research centers, his legacy transcends equations: he trained 16 PhDs who now hold academic positions in eight countries.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "_key": "3fcd4f4c57",
+      "name": "Presidential Chair in Mathematical Sciences",
+      "description": "Evaluated by an international jury chaired by Nobel Prize in Chemistry winner Rudolph Marcus (1990), along with leading scientists from Princeton, Cambridge, Göttingen and Paris.",
+      "year": "1996"
+    },
+    {
+      "_key": "b81140a93a",
+      "name": "Doctor Honoris Causa - University of Metz, France",
+      "description": "First distinction of this type awarded to a Chilean by the French government, in recognition of his work on fluid-solid structures in nuclear power plants.",
+      "year": "1998"
+    },
+    {
+      "_key": "3b27a7320f",
+      "name": "National Prize for Exact Sciences",
+      "description": "Chile's highest scientific award, recognizing his contributions to mathematical analysis and the training of advanced human capital.",
+      "year": "2003"
+    },
+    {
+      "_key": "495ae54860",
+      "name": "Ramón Salas Edwards Award",
+      "description": "National recognition from the Institute of Engineers of Chile for the best technological innovation, for the development of the TAOTE portable ultrasound scanner.",
+      "year": "2016"
+    },
+    {
+      "_key": "dabfe55435",
+      "name": "Chilean Academy of Sciences",
+      "description": "Corresponding Member (2002) and Full Member (since 2012) of the Institute of Chile."
+    },
+    {
+      "_key": "f698f78d6f",
+      "name": "Teaching Excellence Awards",
+      "description": "Recognized in 1995 and 2006 by undergraduate students of the University of Chile as the best teacher."
+    },
+    {
+      "_key": "611a2ddb98",
+      "name": "Other awards",
+      "description": "Manuel Noriega Morales OAS Award (1994) | Manuel Montt Award (1996) | Outstanding Alumnus of San Gabriel School (2003) | Rector's and Full Professor Medals UChile | Scientific Knowledge Generation Award (2022)."
+    }
+  ],
+  "seo": {
+    "metaTitle": "Biography – Carlos Conca"
+  },
+  "_review": []
+}

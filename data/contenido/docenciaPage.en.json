@@ -1,0 +1,132 @@
+{
+  "_id": "docenciaPage-en",
+  "_type": "docenciaPage",
+  "language": "en",
+  "heading": "Teaching & Training",
+  "eyebrow": "54 YEARS OF CAREER",
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "cf3d79cc7b",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "ee7262e86c",
+          "text": "Carlos Conca has mentored 16 doctoral and master’s students who now hold academic positions in eight countries. His teaching goes beyond the mere transmission of knowledge: he has been a pioneer in the creation of postgraduate programs in applied mathematics in Chile, transforming the training of researchers in the country.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "1af4d007fd",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "fd6fbf584b",
+          "text": "His philosophy is clear: to train researchers capable of contributing both to the cutting edge of knowledge and to the scientific development of their communities.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "9b5babc94e",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "9f15af4dc0",
+          "text": "Under Professor Conca's guidance, 16 mathematicians earned their doctorates between 1984 and 2025; he has also supervised 27 engineering and master's theses. They currently hold positions in:",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "doctorates": [
+    {
+      "_key": "d1395acab7",
+      "name": "Jaime Reséndiz Barrón",
+      "year": "2001",
+      "position": "Full Professor, Technological Institute of Querétaro, Mexico – Leonardo Baffico Haramoto (2001); Lecturer, University of Caen, Lower Normandy, France – Rafael Orive Illera (2003); Full Professor, Director of ICMAT, Madrid, Spain – Loredana Balilescu (2006); Full Professor, University of Pitesti, Romania – Erica Schwindt Malacarne (2011); Henri Poincaré University, Nancy I, France – Paul Acevedo Tapia (2015); Assistant Professor, National Polytechnic School, Quito, Ecuador – Duver Quintero Castañeda (2016); Assistant Professor, University of Antioquia",
+      "country": "Colombia"
+    }
+  ],
+  "postdocs": [
+    {
+      "_type": "block",
+      "_key": "4f25e45e56",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "7ef1bf56d0",
+          "text": "He has supervised 15+ post-doctoral researchers from Chile, France, India, Romania and China:",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "d959b13af1",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "efafd50d69",
+          "text": "Srinivasan Natesan (IIT Guwahati, India) | Muslim Malik (BITS Pilani, India) | Rajesh Mahadevan (U. Concepción) | Indira Mishra (IISER Bhopal, India) | Eduardo Espejo (U. Nottingham Ningbo, China) | Natalia Jiménez (PUC Chile) | Catalina Alvarez | Claudia Timofte (U. Bucarest) | Jaime Ortega (U. Chile) | Guillaume Legendre (U. Paris-Dauphine) | Olivier Titaud | Delphine Dupuy | Fatima Zaouri | Olivier Titaud (Université Jean Monnet, Francia) | Delphine Dupuy (Ecole Nationale des Mines de Saint-Etienne, Francia) | Fatima Zaouri (Université de Nancy I, Francia).",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "_key": "e301e7f589",
+      "name": "PhD in Engineering Sciences, specializing in Mathematical Modeling",
+      "period": "1988-1989",
+      "description": "First doctoral program in applied mathematics in Chile. A pioneer in the modernization of mathematics education in the country."
+    },
+    {
+      "_key": "b3bd93f507",
+      "name": "Master of Science in Engineering Sciences, specializing in Applied Mathematics",
+      "period": "1988-1989",
+      "description": "Advanced training program that has graduated dozens of professionals."
+    },
+    {
+      "_key": "150c430f6c",
+      "name": "PhD in Engineering Sciences, specializing in Fluid Dynamics",
+      "period": "2001",
+      "description": "Led the creation of this specialized program at the University of Chile."
+    },
+    {
+      "_key": "dd9309ba65",
+      "name": "MECESUP Project – Integrated General Education",
+      "period": "2004-2010",
+      "description": "As principal investigator, designed and implemented a higher education platform that enabled integrated general education for undergraduate students. Today, the University of Chile offers approximately 100 semester-long courses on various topics of general interest."
+    }
+  ],
+  "seo": {
+    "metaTitle": "Teaching – Carlos Conca"
+  },
+  "_unmapped": {
+    "doctoradosChile": [
+      "– Luis Friz Roa (2003); Associate Professor, University of Bío-Bío – Patricio Cumsille Atala (2006); Associate Professor, University of Bío-Bío – Rodrigo Lecaros Lira (2012); Associate Professor, Federico Santa María Technical University – Karina Vilches Ponce (2014); Full Professor; Vice-Rector, Catholic University of Maule – Matías Godoy Campbell (2016); Associate Professor, San Sebastián University – Viviana Solano Palma (2017); Associate Professor, University of Development – Donato Vásquez-Varas (2022); Assistant Professor, University of Chile – Rodrigo Zelada Mancini (2025)"
+    ],
+    "ingenierosYMagisteres": [
+      "Freddy Aguirre Astorga (1984) | Mauricio Sepúlveda Contreras (1988) | Rodrigo Schiefelbein Grossen (1988) | Mario Durán Toro (1991) | Axel Osses Alvarado (1998) | Leonardo Baffico Haramoto (1996) | Juan-Diego Dávila Bonczos (1996) | Lilian Salinas Ayala (1998) | Alejandro Omón Arancibia (2000) | Eduardo Cerpa Jeria (2004) | Rodrigo Lecaros Lira (2005) | Patricio Cumsille Atala (2006) | Felipe Macías Araya (2007) | León Sanz Bunster (2008) | Manuel Larenas Aravena (2010) | Patricio Cerda Reyes (2010) | Cristóbal Quiñiñao Montero (2010) | Francisco Unda Surawski (2012) | Emilio Vilches Canales (2012) | Rodrigo Lecaros Lira (2012) | Benjamín Obando Vallejos (2013) | Hugo Carrillo Lincopi (2016) | Matías Godoy Campbell (2013) | David Medina (2017) | Vicente Ocqueteau Canales (2023) | Rodrigo Zelada Mancini (2022) | Fabián Ceballos-Ulloa (2025).",
+      "[Genealogy math project](https://www.genealogy.math.ndsu.nodak.edu/id.php?id=97974&fChrono=1)"
+    ]
+  },
+  "_review": [
+    "Posición/país de cada doctorado: se separó el último tramo tras la coma como país; revisar que cada fila quedó bien.",
+    "Los doctorados en Chile y la lista de ingenieros/magísteres NO tienen campo en el schema actual (solo hay \"internacionales\"). Quedaron en _unmapped; decidir si se amplía el schema."
+  ]
+}

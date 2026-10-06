@@ -1,0 +1,12 @@
+{
+  "_id": "contactoPage-en",
+  "_type": "contactoPage",
+  "language": "en",
+  "heading": "Contact",
+  "seo": {
+    "metaTitle": "Contact – Carlos Conca"
+  },
+  "_review": [
+    "El WP no tiene correo ni dirección: la página solo muestra el pie. Completar en el Studio si se quiere publicar."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "_id": "homePage-es",
+  "_type": "homePage",
+  "language": "es",
+  "displayName": "Carlos Conca",
+  "affiliation": "Departamento de Ingeniería Matemática y Centro de Modelamiento Matemático, UMR CNRS-UChile, Universidad de Chile",
+  "stats": [
+    {
+      "_key": "3ae80ce7fa",
+      "value": "1973",
+      "label": "Carrera académica en la Universidad de Chile desde Marzo"
+    },
+    {
+      "_key": "af3e133428",
+      "value": "40",
+      "label": "Estudiantes dirigidos (doctorados, magísteres e ingenieros civiles)"
+    }
+  ],
+  "timeline": [
+    {
+      "_key": "552349427e",
+      "decade": "1970s",
+      "caption": "Formación",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "058f584c2a",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "dfaa24b7fa",
+              "text": "Tras completar su educación en el Colegio San Gabriel, Carlos Conca ingresó a la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile, donde se tituló como Ingeniero Civil Matemático en 1977. Ese mismo año inició su carrera docente en el Departamento de Ingeniería Matemática, enfocándose desde el principio en la matemática aplicada.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "960e28b5c0",
+      "decade": "1980s",
+      "caption": "París y el CNRS",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "d7546aac81",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "154b107de0",
+              "text": "En 1982 obtuvo el grado de Docteur Ingénieur en el prestigioso Laboratoire Jacques-Louis Lions de la Université Pierre et Marie Curie (París VI), y ganó por concurso público un puesto como Chargé de Recherches en el Centre National de la Recherche Scientifique de Francia (CNRS). En 1987 completó su Doctorado de Estado en Ciencias Matemáticas con una tesis sobre homogeneización en mecánica de fluidos, codirigida por Jean-Pierre Puel y François Murat.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "72c59d523d",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "6a0f0fa927",
+              "text": "Durante estos años desarrolló su investigación pionera sobre ondas de Bloch aplicadas a problemas de homogeneización, y colaboró con Électricité de France (EDF) en el análisis matemático de estructuras tubulares para centrales nucleares.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "3cb75b6528",
+      "decade": "1990s",
+      "caption": "Retorno y Liderazgo",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "98b70e219b",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "cb1b6bfbb5",
+              "text": "En octubre de 1987 regresó a Chile como Profesor Asistente. Su ascenso fue rápido: a los 36 años, en 1989, fue promovido a Profesor Titular. Durante esta década dirigió el Departamento de Ingeniería Matemática (1989-1991, 1996) y diseñó los programas de posgrado en Modelamiento Matemático que transformarían la formación en matemática aplicada en Chile.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "17a39f6850",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ebf749a90d",
+              "text": "En 1996 recibió la Cátedra Presidencial en Ciencias Matemáticas, evaluada por un jurado internacional que incluía al Premio Nobel de Química Rudolph Marcus. En 1998, la Universidad de Metz (Francia) le otorgó el título de Doctor Honoris Causa, convirtiéndose en el primer chileno con esta distinción del gobierno francés.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "5eb8cda1f8",
+      "decade": "2000s",
+      "caption": "Premio Nacional",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "896493c45c",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "6c3990b074",
+              "text": "El año 2000 marcó el inicio de una nueva etapa: cofundó el Centro de Modelamiento Matemático (CMM), consolidando grupos de investigación en áreas como medio ambiente, oceanografía, simulación en minería del cobre y modelos fisiológicos. En 2003 recibió el Premio Nacional de Ciencias Exactas, el máximo reconocimiento científico de Chile.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "53875c2fea",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "3fc8d8e1e9",
+              "text": "Durante esta década expandió su liderazgo institucional cofundando el Instituto Milenio de Dinámica Celular y Biotecnología (ICDB) en 2006, y liderando proyectos con la industria chilena, incluyendo Codelco.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "505fbc527f",
+      "decade": "2010s",
+      "caption": "Consolidación",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "c4a8c10a45",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "75a52c8e88",
+              "text": "En 2014 cofundó el Centro de Excelencia en Biotecnología y Bioingeniería (CeBiB), cerrando una trilogía de centros de investigación de alcance nacional. En 2016 recibió el Premio Ramón Salas Edwards por la innovación tecnológica del dispositivo TAOTE, un ecógrafo portátil patentado en Estados Unidos y Chile.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "0141fb1251",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "5d0822d845",
+              "text": "Fue elegido Miembro de Número de la Academia Chilena de Ciencias en 2012, consolidando su posición como una de las figuras más influyentes de la ciencia chilena.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "85e63a799f",
+      "decade": "2020s",
+      "caption": "Legado Actual",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "c85cea75b5",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "7a13ff8210",
+              "text": "Continúa activo en investigación, dirigiendo tesis doctorales y publicando en revistas de primer nivel. En 2022 recibió el Premio a la Generación de Conocimiento Científico de la Universidad de Chile. Su trabajo reciente incluye aplicaciones en biotecnología, modelamiento de pandemias, y problemas inversos en sistemas biológicos.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "metaTitle": "Carlos Conca – Premio Nacional de Ciencias Exactas"
+  },
+  "_review": [
+    "Figma (wireframe) usa otras cifras de muestra: 47+ años de carrera, 218 publicaciones, 119 artículos ISI, 16 doctores formados. No se usaron: contradicen al WP (54 años, 197/198 publicaciones). Definir con el cliente.",
+    "Stats: el WP muestra 4 tarjetas pero los contadores animados no se pueden leer del HTML; solo se extrajeron las cifras fijas. Falta la tarjeta de publicaciones (el WP dice 198, la migración tiene 197).",
+    "Timeline: reparto de párrafos por década inferido de las fechas del texto (1·2·2·2·2·1); confirmar.",
+    "Retrato: no se carga (la imagen del hero es un fondo del tema). Subirlo desde el Studio."
+  ]
+}

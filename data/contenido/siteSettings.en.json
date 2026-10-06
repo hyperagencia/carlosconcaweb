@@ -1,0 +1,80 @@
+{
+  "_id": "siteSettings-en",
+  "_type": "siteSettings",
+  "language": "en",
+  "footerLinks": [
+    {
+      "_key": "77586dd7ff",
+      "_type": "link",
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Carlos_Conca"
+    },
+    {
+      "_key": "a8baccaa80",
+      "_type": "link",
+      "label": "“Brilliant Minds” documentary series",
+      "url": "https://www.youtube.com/watch?v=nRPOUSD1GU8"
+    },
+    {
+      "_key": "dab107d509",
+      "_type": "link",
+      "label": "Interview on WebsEdge Science",
+      "url": "https://www.youtube.com/watch?v=G4UXf4Qx6d0"
+    },
+    {
+      "_key": "38893699b4",
+      "_type": "link",
+      "label": "Engineering School News \"60th Anniversary Celebration\"",
+      "url": "https://ingenieria.uchile.cl/noticias/108561/matematicos-del-mundo-rinden-homenaje-a-premio-nacional-carlos-conca"
+    },
+    {
+      "_key": "7af25e02b5",
+      "_type": "link",
+      "label": "Interview in El País, Spain",
+      "url": "https://elpais.com/elpais/2019/07/17/ciencia/1563370426_198967.html"
+    },
+    {
+      "_key": "2fd2d49137",
+      "_type": "link",
+      "label": "Conversatorio, que dejan huella",
+      "url": "https://drive.google.com/file/d/17FExaMzaNxnzXwddKeOb833ALirthXcX/view?usp=drive_link"
+    }
+  ],
+  "footerInfo": [
+    {
+      "_key": "f8f7384caf",
+      "_type": "link",
+      "label": "Universidad de Chile",
+      "url": "https://uchile.cl/presentacion/historia/grandes-figuras/premios-nacionales/ciencias/carlos-conca-rosende"
+    },
+    {
+      "_key": "c938ecf6b2",
+      "_type": "link",
+      "label": "Google Scholar",
+      "url": "https://scholar.google.co.in/citations?hl=en&user=h2F8sjEAAAAJ"
+    },
+    {
+      "_key": "4a6220560d",
+      "_type": "link",
+      "label": "Academy",
+      "url": "https://uchilefau.academia.edu/CarlosConca"
+    },
+    {
+      "_key": "fdf0748757",
+      "_type": "link",
+      "label": "Department of Mathematical Engineering, University of Chile",
+      "url": "https://www.dim.uchile.cl/~cconca/"
+    }
+  ],
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Carlos_Conca",
+    "https://scholar.google.co.in/citations?hl=en&user=h2F8sjEAAAAJ",
+    "https://uchilefau.academia.edu/CarlosConca",
+    "https://www.dim.uchile.cl/~cconca/"
+  ],
+  "_cvSource": "https://carlosconca.cl/wp-content/uploads/2026/03/cconca-ingles.pdf",
+  "_review": [
+    "CV: se descarga del WP y se sube como archivo al cargar (campo cv).",
+    "sameAs: no hay ORCID en el WP; agregarlo en el Studio cuando exista."
+  ]
+}

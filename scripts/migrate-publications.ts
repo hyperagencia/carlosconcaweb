@@ -216,7 +216,9 @@ async function main() {
       }
     }
 
-    await tx.commit({ visibility: 'async' })
+    // 'sync': los documentos son consultables al volver, necesario para la
+    // verificación posterior y para que un re-run inmediato no duplique.
+    await tx.commit({ visibility: 'sync' })
     written += batch.length
     console.log(`  … ${written}/${docs.length}`)
     if (i + BATCH_SIZE < docs.length) await new Promise((r) => setTimeout(r, BATCH_PAUSE_MS))
@@ -225,8 +227,8 @@ async function main() {
   // 4 · Verificación de integridad contra el dataset real
   console.log('\n▸ VERIFICACIÓN')
 
-  const migrated: { year: number; category: string; link?: string }[] = await client.fetch(
-    `*[_type == "publication" && defined(legacyId)]{year, category, link}`
+  const migrated: Omit<PublicationDoc, '_type' | 'featured'>[] = await client.fetch(
+    `*[_type == "publication" && defined(legacyId)]{legacyId, title, citation, collaborators, year, category, link}`
   )
 
   console.log(`\n  Total  origen ${docs.length}   destino ${migrated.length}`)
@@ -247,7 +249,25 @@ async function main() {
     tally(migrated, (d) => (d.link ? 'con enlace' : 'sin enlace'))
   )
 
-  const allOk = docs.length === migrated.length && okCategory && okDecade && okLinks
+  // Comparación registro a registro: los conteos no detectan un título alterado
+  const fields = ['title', 'citation', 'collaborators', 'year', 'category', 'link'] as const
+  const migratedById = new Map(migrated.map((m) => [m.legacyId, m]))
+  const diffs: string[] = []
+  for (const doc of docs) {
+    const got = migratedById.get(doc.legacyId)
+    if (!got) {
+      diffs.push(`#${doc.legacyId} no está en el dataset`)
+      continue
+    }
+    for (const f of fields) {
+      if ((doc[f] ?? null) !== (got[f] ?? null)) diffs.push(`#${doc.legacyId} difiere en ${f}`)
+    }
+  }
+  const okRecords = diffs.length === 0
+  console.log(`\n  Registro a registro: ${okRecords ? `✓ ${docs.length} idénticos` : `✗ ${diffs.length} diferencia(s)`}`)
+  diffs.slice(0, 20).forEach((d) => console.log(`    ${d}`))
+
+  const allOk = docs.length === migrated.length && okCategory && okDecade && okLinks && okRecords
   console.log(
     allOk
       ? '\n▸ Integridad verificada. Migración completa.\n'

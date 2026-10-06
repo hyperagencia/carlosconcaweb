@@ -13,11 +13,15 @@
     "test": "pnpm --filter web test",
     "typegen": "pnpm --filter studio typegen && pnpm --filter web typegen",
     "migrate": "tsx --env-file=.env.local scripts/migrate-publications.ts",
-    "test:routes": "pnpm --filter web test:routes"
+    "test:routes": "pnpm --filter web test:routes",
+    "extract:wp": "tsx scripts/extract-wp-content.ts",
+    "build:content": "tsx scripts/build-page-content.ts",
+    "load:pages": "tsx --env-file=.env.local scripts/load-pages.ts"
   },
   "devDependencies": {
     "@sanity/client": "^8.9.0",
     "@types/node": "^22",
+    "cheerio": "^1.2.0",
     "tsx": "^4.23.15"
   }
 }

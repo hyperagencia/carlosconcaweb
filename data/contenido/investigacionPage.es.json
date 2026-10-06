@@ -1,0 +1,728 @@
+{
+  "_id": "investigacionPage-es",
+  "_type": "investigacionPage",
+  "language": "es",
+  "heading": "Investigación",
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "dfbb1cc8e3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "fe7bed45af",
+          "text": "La investigación de Carlos Conca se centra en el análisis matemático de sistemas modelados por ecuaciones en derivadas parciales (EDPs), con origen en ciencias naturales y de la ingeniería. Su trabajo combina rigor teórico con relevancia práctica: desde la mecánica de fluidos hasta el modelamiento del sentido del olfato humano.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "2d3203da14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "8cc61a36dd",
+          "text": "Su contribución más reconocida es el desarrollo del ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "bb36922c18",
+          "text": "Método de Bloch en teoría de homogeneización",
+          "marks": [
+            "strong"
+          ]
+        },
+        {
+          "_type": "span",
+          "_key": "276c58070c",
+          "text": ", un enfoque dual de tipo Fourier para el estudio de operadores elípticos con coeficientes altamente oscilantes. Este método es hoy una herramienta estándar en el campo.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "_key": "a093b6d946",
+      "_type": "researchArea",
+      "title": "Homogeneización Matemática - Método de Bloch",
+      "slug": {
+        "_type": "slug",
+        "current": "homogeneizacion-matematica-metodo-de-bloch"
+      },
+      "summary": "En su tesis doctoral francesa, Conca aplicó familias de funciones conocidas como ondas de Bloch (productos de una onda plana por una función periódica) a la homogeneización de modelos de interacción sólido-fluido.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "aa37f97d10",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "be0e87787f",
+              "text": "En su tesis doctoral francesa, Conca aplicó familias de funciones conocidas como ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "f84cdf5e04",
+              "text": "ondas de Bloch",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "b774ccd0eb",
+              "text": " (productos de una onda plana por una función periódica) a la homogeneización de modelos de interacción sólido-fluido.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "a94de83d1d",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "8e0e359efc",
+              "text": "Este trabajo pionero dio origen al ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "ed0d6d5b0d",
+              "text": "Método de Bloch en teoría de homogeneización",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "3449037672",
+              "text": ", un enfoque dual para estudiar materiales heterogéneos con microestructuras periódicas. El método permite analizar cómo las propiedades macroscópicas emergen de estructuras microscópicas complejas.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "a38231fc24",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "48164477fd",
+              "text": "Publicaciones clave:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "6b195fda16",
+              "text": " 15+ artículos, incluyendo colaboraciones con G. Allaire (École Polytechnique), M. Vanninathan (IIT Bombay), y trabajos en ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "004768db26",
+              "text": "Archive for Rational Mechanics and Analysis",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "f8ce217066",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "2844bbbd18",
+              "text": "SIAM Journal",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "1dff885c17",
+              "text": ", ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "14df2af55e",
+              "text": "Journal of Mathematical Physics",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "413c60a5b1",
+              "text": ".",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "applications": [
+        "Materiales compuestos",
+        "medios porosos",
+        "cristales fotónicos",
+        "grafeno"
+      ]
+    },
+    {
+      "_key": "94f5eda09e",
+      "_type": "researchArea",
+      "title": "Mecánica de Fluidos",
+      "slug": {
+        "_type": "slug",
+        "current": "mecanica-de-fluidos"
+      },
+      "summary": "Conca demostró resultados de existencia y unicidad para sistemas evolutivos incompresibles de Stokes y Navier-Stokes con condiciones de borde no estándares: condiciones sobre la presión y los esfuerzos de Cauchy.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "a812f0bfd0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "05aaa0cc19",
+              "text": "Conca demostró resultados de existencia y unicidad para sistemas evolutivos incompresibles de Stokes y Navier-Stokes con ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "7d7e809229",
+              "text": "condiciones de borde no estándares",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "f1a5b455bb",
+              "text": ": condiciones sobre la presión y los esfuerzos de Cauchy.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "da62c27027",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "45a1482e07",
+              "text": "Estos resultados, calificados como “artículo fundacional” por Google AI Scholar, generalizan los teoremas clásicos de ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "91bc1d9388",
+              "text": "Leray, Ladyzhenskaya y Lions",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "eba2e2723f",
+              "text": " al caso donde la forma bilineal “gradiente-gradiente” es reemplazada por “rot-rot” en la formulación variacional.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "c0cd6013fc",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "4605c9a460",
+              "text": "Publicaciones clave:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "08a88ce4c2",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "a8c5934bd6",
+              "text": "Japan Journal of Mathematics",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "989126f281",
+              "text": " (1994), trabajo conjunto con F. Murat y O. Pironneau, originalmente publicado en francés en el libro de Brézis-Lions (1988).",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "e2bf17ddc7",
+      "_type": "researchArea",
+      "title": "Estructuras Fluido-Sólido",
+      "slug": {
+        "_type": "slug",
+        "current": "estructuras-fluido-solido"
+      },
+      "summary": "A principios de los años 80, Conca colaboró con Électricité de France (EDF) en el análisis matemático de condensadores tubulares e intercambiadores de calor para centrales nucleares.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "032942d34d",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "1daa6f24f6",
+              "text": "A principios de los años 80, Conca colaboró con ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "49f5c7939e",
+              "text": "Électricité de France (EDF)",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "563524b752",
+              "text": " en el análisis matemático de condensadores tubulares e intercambiadores de calor para centrales nucleares.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "09b6b7dd73",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "f48e6930cd",
+              "text": "Propuso una nueva familia de modelos matemáticos inspirados en homogeneización. Sus teoremas de localización y distribución de modos estables e inestables proporcionaron una ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "f37daab46f",
+              "text": "explicación teórica del fenómeno de resonancia mecánica",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "361b758930",
+              "text": " observado en condensadores de vapor de las centrales EDF.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "40376652a5",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "52cfdba216",
+              "text": "Por este trabajo recibió el ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "087a0b1914",
+              "text": "Doctor Honoris Causa de la Universidad de Metz (1998)",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "eb928933b4",
+              "text": ", primer chileno con esta distinción del gobierno francés.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "6ffaa79f40",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "95d0c83677",
+              "text": "Posteriormente, con J. San Martín y M. Tucsnak, estudió el movimiento de un cuerpo rígido en un fluido viscoso, demostrando que o bien existe una solución global en tiempo, o bien el cuerpo eventualmente colisiona con el borde del contenedor.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "applications": [
+        "Diseño de centrales nucleares",
+        "aerodinámica",
+        "biomecánica"
+      ]
+    },
+    {
+      "_key": "47f19ef687",
+      "_type": "researchArea",
+      "title": "Cálculo de Variaciones y Diseño Óptimo",
+      "slug": {
+        "_type": "slug",
+        "current": "calculo-de-variaciones-y-diseno-optimo"
+      },
+      "summary": "Su investigación aborda una pregunta original de F. Murat y L. Tartar: ¿cómo distribuir dos materiales homogéneos, en proporciones fijas, dentro de una región para minimizar un criterio mecánico (por ejemplo, el primer autovalor de la mezcla)?",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "1f32e9f4e0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "d3ea5e7dd1",
+              "text": "Su investigación aborda una pregunta original de ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "6108effcb2",
+              "text": "F. Murat y L. Tartar",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "10bd8c6a19",
+              "text": ": ¿cómo distribuir dos materiales homogéneos, en proporciones fijas, dentro de una región para minimizar un criterio mecánico (por ejemplo, el primer autovalor de la mezcla)?",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "888467b8fa",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "5e60264f95",
+              "text": "La conjetura subyacente es la existencia de una configuración óptima clásica, sin necesidad de mezclas homogeneizadas o materiales con microestructura (“composites”).",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "01ece967c7",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "16b4b21459",
+              "text": "Colaboraciones:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "ad94c8e778",
+              "text": " Equipos de Francia (Toulouse, Pau), Chile y España (Sevilla).",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "512c1e7dbc",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "22415d6bce",
+              "text": "Publicaciones destacadas:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "3fb2fafd16",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "b6cd8ab8f5",
+              "text": "SIAM Journal on Applied Mathematics",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "5bf826e80d",
+              "text": " (2012), ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "f09af78d0e",
+              "text": "SIAM Journal on Control and Optimization",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "c38d6ce53a",
+              "text": " (2021).",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "7cb35553bb",
+      "_type": "researchArea",
+      "title": "Problemas Inversos y Aplicaciones",
+      "slug": {
+        "_type": "slug",
+        "current": "problemas-inversos-y-aplicaciones"
+      },
+      "summary": "Los problemas inversos buscan determinar causas a partir de efectos observados. Conca trabajó inicialmente en problemas inversos geométricos: recuperar información sobre un sólido rígido desconocido inmerso en un fluido, a partir de mediciones en el borde.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "046c7da826",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "50034a4429",
+              "text": "Los problemas inversos buscan determinar causas a partir de efectos observados. Conca trabajó inicialmente en ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "6264ef4ca3",
+              "text": "problemas inversos geométricos",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "12028aec1d",
+              "text": ": recuperar información sobre un sólido rígido desconocido inmerso en un fluido, a partir de mediciones en el borde.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "65987ebdb2",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "0e50af2465",
+              "text": "Su aplicación más innovadora es el ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "ae6d1f718a",
+              "text": "modelamiento matemático del sentido del olfato",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "11f2e837da",
+              "text": ". Junto a Rodrigo Lecaros, propuso modelos inversos para determinar la ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "1c0a157ca1",
+              "text": "distribución espacial de canales iónicos",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "9c122101d6",
+              "text": " en neuronas olfativas, midiendo la actividad eléctrica producida por depolarización.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "910be46bb7",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "87340d8d61",
+              "text": "Este trabajo conecta análisis matemático con neurociencia, abriendo nuevas líneas de investigación en biología computacional.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "47fdb06ccb",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "af20c3d368",
+              "text": "Publicaciones clave:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "83b9485fb6",
+              "text": " ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "e715965ccc",
+              "text": "Inverse Problems",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "cf9ab793b2",
+              "text": " (2005, 2010, 2012), ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "6f233c5300",
+              "text": "Journal of Inverse and Ill-Posed Problems",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "50a073523d",
+              "text": " (2014), artículo divulgativo en ",
+              "marks": []
+            },
+            {
+              "_type": "span",
+              "_key": "adae978980",
+              "text": "London Mathematical Society Newsletter",
+              "marks": [
+                "em"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "4138a297fc",
+              "text": " (2018).",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "23184db103",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "71429b8992",
+              "text": "Entrevistas:",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "c56e69c538",
+              "text": " El País España, WebsEdge Science.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "metaTitle": "Investigación – Carlos Conca"
+  },
+  "_review": [
+    "\"Homogeneización Matemática - Método de Bloch\": summary = primer párrafo del WP; confirmar que se entiende sin contexto.",
+    "\"Mecánica de Fluidos\": summary = primer párrafo del WP; confirmar que se entiende sin contexto.",
+    "\"Estructuras Fluido-Sólido\": summary = primer párrafo del WP; confirmar que se entiende sin contexto.",
+    "\"Cálculo de Variaciones y Diseño Óptimo\": summary = primer párrafo del WP; confirmar que se entiende sin contexto.",
+    "\"Problemas Inversos y Aplicaciones\": summary = primer párrafo del WP; confirmar que se entiende sin contexto.",
+    "\"Publicaciones clave\" (texto libre en el WP) quedó dentro de `body`: el campo keyPublications del schema son referencias a publicaciones marcadas como destacadas, que se eligen en el Studio."
+  ]
+}

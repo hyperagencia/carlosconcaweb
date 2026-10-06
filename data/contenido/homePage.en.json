@@ -1,0 +1,213 @@
+{
+  "_id": "homePage-en",
+  "_type": "homePage",
+  "language": "en",
+  "displayName": "Carlos Conca",
+  "affiliation": "Department of Mathematical Engineering and Center for Mathematical Modeling, UMR CNRS-UChile, University of Chile",
+  "stats": [
+    {
+      "_key": "3ae80ce7fa",
+      "value": "1973",
+      "label": "Academic career at the University of Chile since March"
+    },
+    {
+      "_key": "af3e133428",
+      "value": "40",
+      "label": "Students supervised (PhDs, Masters and Civil Engineers)"
+    }
+  ],
+  "timeline": [
+    {
+      "_key": "552349427e",
+      "decade": "1970s",
+      "caption": "Formación",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "04b7ace179",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "3728e260d6",
+              "text": "After completing his education at Colegio San Gabriel, Carlos Conca entered the Faculty of Physical and Mathematical Sciences at the University of Chile, where he graduated as a Mathematical Civil Engineer in 1977. That same year he began his teaching career in the Department of Mathematical Engineering, focusing from the beginning on applied mathematics.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "960e28b5c0",
+      "decade": "1980s",
+      "caption": "París y el CNRS",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "c231af5dd9",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "88f63483b5",
+              "text": "In 1982, he earned his Doctorate in Engineering from the prestigious Jacques-Louis Lions Laboratory at Pierre and Marie Curie University (Paris VI), and won a competitive position as a Research Fellow at the French National Centre for Scientific Research (CNRS). In 1987, he completed his State Doctorate in Mathematical Sciences with a dissertation on homogenization in fluid mechanics, co-supervised by Jean-Pierre Puel and François Murat.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "e8d3b924f4",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "27e5c372ab",
+              "text": "During these years, he developed his pioneering research on Bloch waves applied to homogenization problems, and collaborated with Électricité de France (EDF) on the mathematical analysis of tubular structures for nuclear power plants.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "3cb75b6528",
+      "decade": "1990s",
+      "caption": "Retorno y Liderazgo",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "7c60027a3c",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "064066d4d5",
+              "text": "In October 1987, he returned to Chile as an Assistant Professor. His rise was rapid: at the age of 36, in 1989, he was promoted to Full Professor. During this decade, he directed the Department of Mathematical Engineering (1989-1991, 1996) and designed the graduate programs in Mathematical Modeling that would transform applied mathematics education in Chile.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "1118316206",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "47a6f7015b",
+              "text": "In 1996, he received the Presidential Chair in Mathematical Sciences, evaluated by an international jury that included Nobel Laureate in Chemistry Rudolph Marcus. In 1998, the University of Metz (France) awarded him a Doctor Honoris Causa, making him the first Chilean to receive this distinction from the French government.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "5eb8cda1f8",
+      "decade": "2000s",
+      "caption": "Premio Nacional",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "ac57e58f5a",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "4ee8d5a819",
+              "text": "The year 2000 marked the beginning of a new phase: he co-founded the Center for Mathematical Modeling (CMM), consolidating research groups in areas such as the environment, oceanography, copper mining simulation, and physiological models. In 2003, he received the National Prize for Exact Sciences, Chile’s highest scientific honor.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "5835e7f389",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "cbfb1c3cf3",
+              "text": "During this decade, he expanded his institutional leadership by co-founding the Millennium Institute of Cell Dynamics and Biotechnology (ICDB) in 2006 and leading projects with Chilean industry, including Codelco.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "505fbc527f",
+      "decade": "2010s",
+      "caption": "Consolidación",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "b0b9c3e8c7",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "19a568c3e4",
+              "text": "In 2014, he co-founded the Center of Excellence in Biotechnology and Bioengineering (CeBiB), completing a trio of research centers with national reach. In 2016, he received the Ramón Salas Edwards Award for the technological innovation of the TAOTE device, a portable ultrasound scanner patented in the United States and Chile.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "d194026119",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "23253c5b5a",
+              "text": "He was elected a Full Member of the Chilean Academy of Sciences in 2012, solidifying his position as one of the most influential figures in Chilean science.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_key": "85e63a799f",
+      "decade": "2020s",
+      "caption": "Legado Actual",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "8a6e7ccb87",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "03e7a5d460",
+              "text": "He remains active in research, supervising doctoral theses and publishing in top-tier journals. In 2022, he received the Scientific Knowledge Generation Award from the University of Chile. His recent work includes applications in biotechnology, pandemic modeling, and inverse problems in biological systems.",
+              "marks": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "metaTitle": "Carlos Conca – Premio Nacional de Ciencias Exactas"
+  },
+  "_review": [
+    "Figma (wireframe) usa otras cifras de muestra: 47+ años de carrera, 218 publicaciones, 119 artículos ISI, 16 doctores formados. No se usaron: contradicen al WP (54 años, 197/198 publicaciones). Definir con el cliente.",
+    "Stats: el WP muestra 4 tarjetas pero los contadores animados no se pueden leer del HTML; solo se extrajeron las cifras fijas. Falta la tarjeta de publicaciones (el WP dice 198, la migración tiene 197).",
+    "Timeline: reparto de párrafos por década inferido de las fechas del texto (1·2·2·2·2·1); confirmar.",
+    "Timeline EN: las bajadas (caption) están en español en el WP (\"Formación\", …). Se copiaron tal cual; traducir.",
+    "Retrato: no se carga (la imagen del hero es un fondo del tema). Subirlo desde el Studio."
+  ]
+}

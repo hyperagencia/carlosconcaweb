@@ -1,0 +1,12 @@
+{
+  "_id": "publicacionesPage-es",
+  "_type": "publicacionesPage",
+  "language": "es",
+  "heading": "Publicaciones",
+  "seo": {
+    "metaTitle": "Publicaciones – Carlos Conca"
+  },
+  "_review": [
+    "El WP no tiene texto introductorio en esta página (solo el título y el contador)."
+  ]
+}
