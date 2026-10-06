@@ -119,11 +119,14 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
    ver `.env.example`; el token se crea en sanity.io/manage → API → Tokens).
 2. `pnpm typecheck && pnpm lint && pnpm test && pnpm build && pnpm test:routes`
    debe pasar antes de tocar nada.
-3. **Fase 3 (desktop) es lo siguiente y está bloqueada por una conversación**: el
-   usuario va a explicar la línea visual del tema de Carlos y los componentes de
-   Figma uno a uno. No inventar tokens, colores ni tipografías. Preguntar y llenar
-   el `@theme` de `web/app/globals.css` (hoy vacío) con lo que él indique. Orden
-   del ROADMAP: T5 sistema de diseño → T6 componente de Publicaciones → T7 páginas.
+3. **Fase 3 (desktop) en curso (T5)**. Ya explicado: paleta (#1c1c1c, #393939, #e5e5e5,
+   #f7f7f7), Zalando Sans ≤600, modo claro/oscuro, glass, Framer Motion para animaciones.
+   Hecho: tokens en `web/app/globals.css` (crudos + semánticos `bg/surface/fg/accent/line`;
+   los componentes usan solo los semánticos), tema por clase `.dark` en `<html>` (script
+   inline + `ThemeToggle`), y `components/navbar/`. Las secciones declaran
+   `data-nav-tone="light|dark"` y la navbar cambia su glass según la que tiene debajo.
+   Pendiente: el usuario sigue explicando componentes (footer, hero, tarjetas, acordeón,
+   publicaciones…), radios de cards, mobile. No inventar lo que no explicó.
 4. Las páginas (`web/app/[locale]/**/page.tsx`) son stubs que solo muestran un `<h1>`;
    los datos ya se leen con las funciones de `web/lib/sanity/fetch.ts`.
 

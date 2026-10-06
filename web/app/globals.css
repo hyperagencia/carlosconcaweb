@@ -1,6 +1,64 @@
 @import "tailwindcss";
 
-/* Tokens de Figma pendientes: no inventar valores ni hardcodear colores
-   fuera de @theme. Se completan cuando se explique el sistema de diseño. */
+/* Modo oscuro por clase en <html> (la fija el script de app/[locale]/layout.tsx). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Paleta cruda. Los componentes NO la usan directo: usan los tokens
+   semánticos de abajo, que cambian según el modo. */
 @theme {
+  --color-ink-900: #1c1c1c;
+  --color-ink-700: #393939;
+  --color-paper-200: #e5e5e5;
+  --color-paper-50: #f7f7f7;
+
+  --font-sans: var(--font-zalando), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-pill: 9999px;
+}
+
+:root {
+  --bg: #e5e5e5;
+  --surface: #f7f7f7;
+  --fg: #1c1c1c;
+  --accent: #1c1c1c;
+  --border: color-mix(in srgb, #1c1c1c 35%, transparent);
+
+  /* Glass (vidrio esmerilado) para header y otros elementos. */
+  --glass-light: color-mix(in srgb, #f7f7f7 72%, transparent);
+  --glass-dark: color-mix(in srgb, #393939 78%, transparent);
+  --glass-blur: 18px;
+
+  --nav-h: 5rem;
+}
+
+.dark {
+  --bg: #1c1c1c;
+  --surface: #393939;
+  --fg: #f7f7f7;
+  --accent: #f7f7f7;
+  --border: color-mix(in srgb, #f7f7f7 35%, transparent);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-accent: var(--accent);
+  --color-line: var(--border);
+  --color-glass-light: var(--glass-light);
+  --color-glass-dark: var(--glass-dark);
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-weight: 400;
 }

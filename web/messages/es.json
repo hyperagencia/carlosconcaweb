@@ -9,7 +9,12 @@
     "research": "Investigación",
     "teaching": "Docencia",
     "biography": "Biografía",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "primary": "Navegación principal",
+    "language": "Idioma",
+    "themeToLight": "Cambiar a modo claro",
+    "themeToDark": "Cambiar a modo oscuro",
+    "logo": "Carlos Conca, inicio"
   },
   "Categories": {
     "articulo-wos": "Artículos WoS",

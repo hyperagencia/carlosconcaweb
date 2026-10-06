@@ -204,10 +204,11 @@ despliega con `sanity deploy`; no hace falta para escribir ni leer documentos.
 
 ## T5 · Sistema de diseño
 
-- Tokens desde Figma a `@theme` de Tailwind
-- Tipografía self-hosted con `next/font/local`, subset latin, `display: swap`,
-  preload únicamente del peso que participa del LCP
-- Primitivas: tipografía, botón, tarjeta, contenedor, acordeón
+- [x] Tokens a `@theme` (paleta + semánticos claro/oscuro + glass) — 2026-10-06
+- [x] Tipografía Zalando Sans (`next/font/google`, pesos 400/500/600, auto-hospedada por Next)
+- [x] Tema claro/oscuro (preferencia del sistema + toggle skiper4 botón 5)
+- [x] Navbar traslúcida adaptativa + switch ES/EN (falta revisarla contra Figma y mobile)
+- [ ] Primitivas: tipografía, botón, tarjeta, contenedor, acordeón
 
 ## T6 · Componente de Publicaciones
 

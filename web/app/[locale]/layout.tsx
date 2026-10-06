@@ -2,7 +2,19 @@ import type { Metadata } from 'next'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
+import { Zalando_Sans } from 'next/font/google'
+import { Navbar } from '@/components/navbar/navbar'
 import { routing } from '@/lib/i18n/routing'
+
+const zalando = Zalando_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-zalando',
+  display: 'swap',
+})
+
+// Fija .dark antes de pintar: tema guardado, o preferencia del sistema.
+const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -25,9 +37,15 @@ export default async function LocaleLayout({
   setRequestLocale(locale)
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={zalando.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )

@@ -9,7 +9,12 @@
     "research": "Research",
     "teaching": "Teaching",
     "biography": "Biography",
-    "contact": "Contact"
+    "contact": "Contact",
+    "primary": "Main navigation",
+    "language": "Language",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode",
+    "logo": "Carlos Conca, home"
   },
   "Categories": {
     "articulo-wos": "WoS articles",

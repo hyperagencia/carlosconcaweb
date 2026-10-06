@@ -9,8 +9,8 @@ profesor (retrato, CV, imágenes de página) se sube a Sanity.
 
 | Archivo | Qué es | Destino previsto |
 |---|---|---|
-| `logos/logo-carlos-conca.svg` | Isotipo "CC", trazo negro (viewBox 334×334) | `web/public/` · header/footer sobre fondo claro |
-| `logos/logo-carlos-conca-light.svg` | Isotipo "CC", versión clara | `web/public/` · header sobre fondo oscuro |
+| `logos/logo-carlos-conca.svg` | Isotipo "CC", trazo negro (viewBox 334×334) | **movido a `web/public/logos/`** · navbar sobre fondo claro (falta footer) |
+| `logos/logo-carlos-conca-light.svg` | Isotipo "CC", versión clara | **movido a `web/public/logos/`** · navbar sobre fondo oscuro |
 | `logos/logo-fcfm.png`, `logo-fcfm-2.png` | Logo Facultad de Ciencias Físicas y Matemáticas (927×170), dos variantes; el WordPress usa `logo_fcfm2.png` en el hero de la home | `web/public/` (confirmar cuál va) |
 | `fotos/carlos-conca-background.jpg` | Foto de fondo, 1450×1224 | hero de la home (Sanity `portrait` o `public/`; decidir) |
 | `fotos/carlos-conca-background-2.jpg` | Misma foto, 1700×1419 (mayor resolución; es la que usa el WordPress) | ídem |
