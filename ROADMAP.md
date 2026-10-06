@@ -208,6 +208,8 @@ despliega con `sanity deploy`; no hace falta para escribir ni leer documentos.
 - [x] Tipografía Zalando Sans (`next/font/google`, pesos 400/500/600, auto-hospedada por Next)
 - [x] Tema claro/oscuro (preferencia del sistema + toggle skiper4 botón 5)
 - [x] Navbar traslúcida adaptativa + switch ES/EN (falta revisarla contra Figma y mobile)
+- [x] Hero y sección Carrera académica de la home (ES/EN)
+- [x] `--gutter` común navbar/secciones
 - [ ] Primitivas: tipografía, botón, tarjeta, contenedor, acordeón
 
 ## T6 · Componente de Publicaciones

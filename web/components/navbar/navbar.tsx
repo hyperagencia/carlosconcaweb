@@ -36,7 +36,7 @@ export function Navbar() {
         dark ? 'bg-glass-dark text-paper-50' : 'bg-glass-light text-ink-900',
       )}
     >
-      <div className="mx-auto flex h-full max-w-[1600px] items-center justify-between px-[clamp(1.5rem,6vw,7rem)]">
+      <div className="flex h-full items-center justify-between px-[var(--gutter)]">
         <Link href="/" aria-label={t('logo')} className="shrink-0">
           <Image
             src={dark ? '/logos/logo-carlos-conca-light.svg' : '/logos/logo-carlos-conca.svg'}

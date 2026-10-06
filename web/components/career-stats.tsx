@@ -38,7 +38,7 @@ export async function CareerStats({ stats }: { stats: Stat[] }) {
   return (
     <section
       data-nav-tone="light"
-      className="px-[clamp(1rem,4vw,5rem)] py-[clamp(3rem,8vw,7rem)]"
+      className="px-[var(--gutter)] py-[clamp(3rem,8vw,7rem)]"
     >
       <Reveal>
         <h2 className="text-[clamp(2.25rem,4.4vw,4.25rem)] leading-tight font-normal tracking-tight">

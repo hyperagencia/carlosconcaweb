@@ -119,14 +119,17 @@ pocas imágenes; no se usa Cloudinary ni loader custom. Decisión de 2026-10-05.
    ver `.env.example`; el token se crea en sanity.io/manage → API → Tokens).
 2. `pnpm typecheck && pnpm lint && pnpm test && pnpm build && pnpm test:routes`
    debe pasar antes de tocar nada.
-3. **Fase 3 (desktop) en curso (T5)**. Ya explicado: paleta (#1c1c1c, #393939, #e5e5e5,
-   #f7f7f7), Zalando Sans ≤600, modo claro/oscuro, glass, Framer Motion para animaciones.
-   Hecho: tokens en `web/app/globals.css` (crudos + semánticos `bg/surface/fg/accent/line`;
-   los componentes usan solo los semánticos), tema por clase `.dark` en `<html>` (script
-   inline + `ThemeToggle`), y `components/navbar/`. Las secciones declaran
-   `data-nav-tone="light|dark"` y la navbar cambia su glass según la que tiene debajo.
-   Pendiente: el usuario sigue explicando componentes (footer, hero, tarjetas, acordeón,
-   publicaciones…), radios de cards, mobile. No inventar lo que no explicó.
+3. **Fase 3 (desktop) en curso (T5/T7)**. Línea visual explicada por el usuario: fondo claro
+   #f1f0ef (paneles #e6e6e6, tarjetas blancas), paleta #1c1c1c / #393939 / #f7f7f7, Zalando
+   Sans ≤600, glass en navbar, Framer Motion para entradas, radio de cards 20px.
+   Hecho: tokens en `web/app/globals.css` (semánticos `bg/panel/card/card-hover/surface/fg/
+   accent/line`; los componentes usan solo esos), `--gutter` = margen lateral común de navbar
+   y secciones. Tema: oscuro por `prefers-color-scheme` en CSS (sin `<script>`: React 19 lo
+   rechaza al cambiar de idioma), `ThemeSync` aplica la elección guardada, `.dark`/`.light`
+   la fuerzan. `components/navbar/` (glass adaptativa: las secciones declaran
+   `data-nav-tone="light|dark"`), `hero.tsx`, `career-stats.tsx` (home hasta "Carrera académica").
+   Pendiente: seguir con las demás secciones de la home (timeline, áreas, footer…), páginas
+   internas, dark mode del logo FCFM, mobile. No inventar lo que el usuario no explicó.
 4. Las páginas (`web/app/[locale]/**/page.tsx`) son stubs que solo muestran un `<h1>`;
    los datos ya se leen con las funciones de `web/lib/sanity/fetch.ts`.
 

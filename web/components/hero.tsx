@@ -14,7 +14,7 @@ export async function Hero({
   return (
     <section
       data-nav-tone="light"
-      className="flex min-h-svh px-[clamp(1rem,4vw,5rem)] pt-[calc(var(--nav-h)+1rem)] pb-[clamp(1rem,2vw,1.5rem)]"
+      className="flex min-h-svh px-[var(--gutter)] pt-[calc(var(--nav-h)+1rem)] pb-[clamp(1rem,2vw,1.5rem)]"
     >
       <div className="grid w-full flex-1 grid-cols-1 gap-[clamp(1rem,1.5vw,1.5rem)] lg:grid-cols-2">
         <div className="relative min-h-[22rem] overflow-hidden rounded-card">
