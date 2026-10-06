@@ -27,5 +27,10 @@
   "Hero": {
     "photoAlt": "Carlos Conca explicando en una pizarra",
     "facultyAlt": "Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile"
+  },
+  "Home": {
+    "careerTitle": "Carrera académica",
+    "scientific": "Publicaciones Científicas",
+    "mathPhysics": "Publicaciones Matemáticas y Física-Matemática"
   }
 }

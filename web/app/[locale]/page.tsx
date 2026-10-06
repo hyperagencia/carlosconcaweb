@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { CareerStats } from '@/components/career-stats'
 import { Hero } from '@/components/hero'
 import type { Locale } from '@/lib/i18n/routing'
 import { getHomePage } from '@/lib/sanity/fetch'
@@ -17,6 +18,7 @@ export default async function Page({ params }: PageProps<'/[locale]'>) {
         name={home?.displayName ?? meta('siteName')}
         affiliation={home?.affiliation ?? ''}
       />
+      <CareerStats stats={home?.stats ?? []} />
     </main>
   )
 }

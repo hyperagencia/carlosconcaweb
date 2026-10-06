@@ -27,5 +27,10 @@
   "Hero": {
     "photoAlt": "Carlos Conca explaining at a whiteboard",
     "facultyAlt": "Faculty of Physical and Mathematical Sciences, University of Chile"
+  },
+  "Home": {
+    "careerTitle": "Academic career",
+    "scientific": "Scientific Publications",
+    "mathPhysics": "Mathematical and Mathematical-Physics Publications"
   }
 }
